@@ -13,7 +13,7 @@
 2. Easier UI for mobile users
 3. Render individual task descriptions
 
---Values are taken from a file db.json created after the installation of JSON-server--
+--Datas are taken from a file db.json created after the installation of JSON-server--
   
 //Additionals  
 # Getting Started with Create React App
