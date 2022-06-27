@@ -1,0 +1,28 @@
+.text-primary{
+    font-size:23px;
+    margin-right:10px;
+    cursor:pointer;
+}
+.smlProps{
+    z-index:2 !important;
+    position:absolute;
+    top:34px;
+    right:0;
+    padding:20px 10px 20px 10px;
+    background:rgb(230, 230, 230);
+    border:1px solid rgb(221, 221, 221);
+    transition: .5s ease-in-out;
+}
+.nav-link{
+    list-style:none;
+}
+.hidden{
+    transform:translateX(132px);
+}
+.unHidden{
+    transform:translateX(0px);
+}
+.meetingsButton{
+    margin-top:20px !important;
+    margin-bottom:10px;
+}

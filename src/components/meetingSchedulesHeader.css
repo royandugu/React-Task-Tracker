@@ -1,0 +1,21 @@
+.iContainer{
+    padding-top:10px;
+    font-size:25px;
+    display:flex;
+    flex-flow:row-reverse;
+    margin-right:20px;
+    align-items: center;
+}
+.text-primary{
+    margin-left:10px;
+    font-size:50px;
+}
+h5{
+    margin-top:20px;
+}
+.meetingBodyContainer{
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+}
+

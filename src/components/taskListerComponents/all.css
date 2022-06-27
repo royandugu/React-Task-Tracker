@@ -1,0 +1,88 @@
+.allTask{
+    margin-left:20px;
+}
+.indvTasks{
+    margin-bottom:15px;
+    display:grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    align-items: center;
+    cursor:pointer;
+    padding:10px;
+}
+.indvTasks:hover{
+    box-shadow:1px 2px 2px 1px rgb(228, 228, 228);
+}
+.taskChecker{
+    margin-left:20px;
+    margin-top:6px;
+    cursor:pointer;
+    -webkit-appearance: none;
+    height:30px;
+    background:rgb(228, 228, 228);
+    width:30px;
+    position: relative;
+}
+
+.taskChecker::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 500;
+    content:"\f00c";
+    font-size:20px; 
+    display:none; 
+    top:0;
+    left:0;  
+    position: absolute;
+}
+.taskChecker:hover{
+    background:rgb(218, 218, 218);
+}
+.taskChecker:checked::after{
+    display:block;
+}
+.task{
+    position:relative;
+}
+.adminResponse{
+    background:rgb(190, 221, 255);
+    float:right;
+    border-radius:20px;
+    margin-right:10px;
+    color:rgb(45, 143, 255);
+    font-weight: bold;
+    padding:8px;
+    pointer-events: none;
+}
+.allTask h5{
+    color:rgb(155, 155, 155);
+}
+.viewBtn{
+    margin-top:0px !important;
+    color:white;
+    width:100%;
+    font-weight: bold;
+    transition:.5s ease-in-out;
+    outline:none !important;
+    border:none;
+    padding:6px;
+}
+.warning{
+    background-color: #f0ad4e;
+}
+.warning:hover{
+    background-color: #c28d43;
+}   
+.danger{
+    background-color: #d9534f;
+}
+.danger:hover{
+    background-color: #a1423f;
+}
+.primary{
+    background-color:#0275d8;
+}
+.primary:hover{
+    background-color: #094d88;
+}
+.dark{
+    background-color: #292b2c;
+}
