@@ -1,4 +1,4 @@
-# <<Development Phase>> A front-end task-tracking web application using React JS, React Query and JSON-Server
+# <Development Phase> A front-end task-tracking web application using React JS, React Query and JSON-Server
 
 
 ***Features added so far***
