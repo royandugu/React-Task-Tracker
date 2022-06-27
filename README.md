@@ -1,3 +1,19 @@
+# <<Development Phase>> A front-end task-tracking web application using React JS, React Query and JSON-Server
+
+
+***Features added so far***
+1. Responsiveness
+2. Different button color rendering as per the task property
+3. Deletion of task on completion click (both from the front-end as well as the database)
+
+
+
+***In Progress***
+1. Render meetings
+2. Easier UI for mobile users
+3. Render individual task descriptions
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
