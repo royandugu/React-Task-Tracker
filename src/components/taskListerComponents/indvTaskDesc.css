@@ -1,0 +1,27 @@
+.modelBox2{
+    position:absolute;
+    background:white;
+    top:0;
+    z-index:2;
+    width:37%;
+    border:1px solid rgb(221, 221, 221);
+}
+.contentContainer{
+    padding:20px;
+}
+.modelBox2 .bg-dark{
+    margin-top:0px !important;
+}
+.modelBox2 h3{
+    text-align:center;
+}
+.modelBox2 button{
+    margin-top:20px;
+    margin-bottom:10px;
+}
+.unClickable{
+    pointer-events:none;
+}
+.modelBox2 h5{
+    color:white;
+}
