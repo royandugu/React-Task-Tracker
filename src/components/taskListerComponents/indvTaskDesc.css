@@ -1,0 +1,27 @@
+.modelBox{
+    position:absolute;
+    background:white;
+    top:0;
+    z-index:2;
+    width:37%;
+    border:1px solid rgb(221, 221, 221);
+}
+.contentContainer{
+    padding:20px;
+}
+.closeButtonContainer{
+    margin-top:0px;
+}
+.modelBox h3{
+    text-align:center;
+}
+.modelBox button{
+    margin-top:20px;
+    margin-bottom:10px;
+}
+.unClickable{
+    pointer-events:none;
+}
+.modelBox h5{
+    color:white;
+}

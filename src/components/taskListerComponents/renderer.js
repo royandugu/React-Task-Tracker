@@ -5,7 +5,6 @@ import IndvTaskDesc from "./indvTaskDesc";
 const Renderer=({tasks,customTasks,setTask,setCustomTask,deleter})=>{
     const [clicked,setClicked]=useState(false);
     const [id,setId]=useState(-1);
-    const [canClick, setCanClick]=useState(true);
 
     let buttonColor;
     let currentTasks;
@@ -42,7 +41,6 @@ const Renderer=({tasks,customTasks,setTask,setCustomTask,deleter})=>{
                             e.preventDefault();
                             setId(index.id);
                             clicked?setClicked(false):setClicked(true);
-                            setCanClick(false);
                         }}> View  </button>
                     </div>
                 </div>
