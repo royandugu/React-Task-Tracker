@@ -4,8 +4,7 @@ import IndvTaskDesc from "./indvTaskDesc";
 
 const Renderer=({tasks,customTasks,setTask,setCustomTask,deleter})=>{
     const [clicked,setClicked]=useState(false);
-    const [id,setId]=useState(-1);
-    const [canClick, setCanClick]=useState(true);
+    const [id,setId]=useState(5);
 
     let buttonColor;
     let currentTasks;
@@ -16,6 +15,11 @@ const Renderer=({tasks,customTasks,setTask,setCustomTask,deleter})=>{
         buttonColor=btnClr;
     }
 
+    const changeIdAndClick=(id)=>{
+        setId(id);
+        setClicked(true);
+    }
+    
     return(
         <form className="allTask">
             {(currentTasks.length>0)?currentTasks.map(index=>(
@@ -40,14 +44,12 @@ const Renderer=({tasks,customTasks,setTask,setCustomTask,deleter})=>{
                         }
                         <button className={buttonColor} onClick={(e)=>{
                             e.preventDefault();
-                            setId(index.id);
-                            clicked?setClicked(false):setClicked(true);
-                            setCanClick(false);
+                            (index.id===id & clicked===true) ? setClicked(false): changeIdAndClick(index.id);
                         }}> View  </button>
                     </div>
                 </div>
             )):(<h5> There are no tasks left... </h5>)}
-            {clicked && <IndvTaskDesc id={id}/>}
+            <IndvTaskDesc id={id} clicked={clicked}/>
         </form>
     )
 }

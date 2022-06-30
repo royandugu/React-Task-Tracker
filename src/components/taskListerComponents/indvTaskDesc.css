@@ -1,7 +1,8 @@
-.modelBox2{
+.modelBox{
     position:absolute;
     background:white;
-    top:0;
+    top:0px;
+    right:10px;
     z-index:2;
     width:37%;
     border:1px solid rgb(221, 221, 221);
@@ -9,19 +10,30 @@
 .contentContainer{
     padding:20px;
 }
-.modelBox2 .bg-dark{
-    margin-top:0px !important;
+.closeButtonContainer{
+    margin-top:0px;
+    display:flex;
+    justify-content: flex-end;
+    padding-right:10px;
 }
-.modelBox2 h3{
+.modelBox h3{
     text-align:center;
 }
-.modelBox2 button{
+.modelBox button{
     margin-top:20px;
     margin-bottom:10px;
 }
 .unClickable{
     pointer-events:none;
 }
-.modelBox2 h5{
+.modelBox h5{
     color:white;
+}
+.hide{
+    transform: translateY(-250px);
+    transition: 1s ease-in-out;
+}
+.show{
+    transform:translateY(0px);
+    transition: 1s ease-in-out;
 }
