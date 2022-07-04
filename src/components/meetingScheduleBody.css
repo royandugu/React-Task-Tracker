@@ -1,3 +1,40 @@
+.meetingContainer{
+    border-top:1px solid rgb(216, 216, 216);
+    overflow-y:scroll;
+    padding:10px;
+}
 .invMeetingContainer{
-    background:black;
+    padding:20px;
+    padding-top:5px !important;
+    display:flex;
+    flex-flow:column;
+    justify-content: center;
+    margin-top:20px;
+}
+.invMeetingContainer h5{
+    font-weight:bold;
+    margin-bottom:20px;
+    margin-top:20px;
+}
+.invMeetingContainer p{
+    margin-bottom:20px;
+}
+.invMeetingContainer button{
+    margin-bottom:10px;
+    width:50%;
+}
+.dangerContainer{
+    background:#d9534f;
+    border:3px solid #a1423f;
+}
+.warningContainer{
+    background:#f0ad4e;
+    border:3px solid #c28d43;
+}
+.primaryContainer{
+    background:#0275d8;
+    border:3px solid  #094d88;
+}
+.darkContainer{
+    background:#292b2c;
 }

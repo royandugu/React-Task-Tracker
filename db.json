@@ -64,6 +64,13 @@
       "time": "1 : 00 P.M.",
       "mid": 2,
       "semMenu":"Note"
+    },
+    {
+      "name":"NOSK meeting",
+      "description":"To talk about the front end of the main website",
+      "time":"1:30 A.M",
+      "mid":3,
+      "semMenu":"Link"
     }
   ]
 }

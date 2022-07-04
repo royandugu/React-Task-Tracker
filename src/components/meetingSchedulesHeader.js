@@ -13,7 +13,7 @@ const MeetingSchedule=({fetcher})=>{
                 <FaCheckSquare className="text-primary"/><FaUser/> 
             </div>
             <div className="meetingBodyContainer">
-                <h5> Meeting Schedule </h5>
+                <h5 className="containerTitle"> Meeting Schedules </h5>
                 <MeetingScheduleBody data={data} status={status}/>
             </div>
         </div>
