@@ -10,8 +10,9 @@
     margin-left:10px;
     font-size:50px;
 }
-h5{
-    margin-top:20px;
+.containerTitle{
+    margin-top:70px;
+    margin-bottom:30px;
 }
 .meetingBodyContainer{
     display:flex;
