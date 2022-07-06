@@ -23,8 +23,12 @@ body{
     display:flex;
     justify-content: flex-end;
 }
+
 @media only screen and (max-width: 991px) {
     .taskListContainer{
         margin-top:30px;
+    }
+    body{
+        overflow-y:scroll !important;        
     }
 }

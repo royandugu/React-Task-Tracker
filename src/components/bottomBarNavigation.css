@@ -1,0 +1,21 @@
+.bottomBarNavigation{
+    display:flex;
+    flex-flow:row;
+    position:fixed;
+    bottom:0;
+    right:0;
+    left:0;
+    background:rgb(231, 231, 231);
+    border-top:1px solid rgb(224, 224, 224);
+    z-index:2;
+}
+.bottomBarNavigation>.bottomButtonContainer{
+    display:flex !important;
+    flex-flow:row;
+    justify-content: space-around;
+    width:100%;
+    padding:10px;
+}
+.bottomBarLink{
+    cursor:pointer;
+}

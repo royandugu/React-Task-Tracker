@@ -1,10 +1,11 @@
-import { BrowserRouter } from "react-router-dom";
+import {BrowserRouter } from "react-router-dom";
 import {fetchTasks,fetchMeetings} from "./components/queryFetchers/fetcher";
 
 import SideMenu from "./components/menu";
 import TaskLister from "./components/taskLister";
 import MeetingSchedulesHeader from "./components/meetingSchedulesHeader";
 import SmlSideMenu from "./components/smlSideMenu";
+import BottomBarNavigation from "./components/bottomBarNavigation";
 
 import "./App.css";
 
@@ -35,6 +36,13 @@ const App=()=>{
                 <div className="col-lg-5 col-12 d-none d-lg-block">
                     <BrowserRouter>
                         <MeetingSchedulesHeader fetcher={fetchMeetings}/>
+                    </BrowserRouter>
+                </div>
+            </div>
+            <div className="bottomBarNavigation d-block d-lg-none">
+                <div className="bottomButtonContainer">
+                    <BrowserRouter>
+                        <BottomBarNavigation/>
                     </BrowserRouter>
                 </div>
             </div>
