@@ -10,18 +10,20 @@
     flex-flow:column;
     justify-content: center;
     margin-top:20px;
+    border-radius:10px;
 }
 .invMeetingContainer h5{
     font-weight:bold;
-    margin-bottom:20px;
-    margin-top:20px;
+    margin-bottom:30px;
 }
 .invMeetingContainer p{
-    margin-bottom:20px;
+    margin-top:20px;
+    margin-bottom:10px;
 }
 .invMeetingContainer button{
     margin-bottom:10px;
     width:50%;
+    border-radius:10px;
 }
 .dangerContainer{
     background:#d9534f;
@@ -37,4 +39,16 @@
 }
 .darkContainer{
     background:#292b2c;
+}
+.dangerText{
+    color:#6e2d2b;
+}
+.primaryText{
+    color:#073761;
+}
+.warningText{
+    color:#966d34;
+}
+.darkText{
+    color:#292b2c;
 }

@@ -1,13 +1,11 @@
-import {useState} from "react";
 import "./meetingScheduleBody.css";
 
-const MeetingScheduleBody=({data,status})=>{
-    const [containerHeight,setContainerHeight]=useState(window.innerHeight);
-    window.onresize=()=>setContainerHeight(window.innerHeight);
+const MeetingScheduleBody=({data,status,containerHeight})=>{
     let containerCls;
-
-    const assignCls=(cls)=>{
-        containerCls=cls;
+    let textCls;
+    const assignCls=(clsContainer,clsText)=>{
+        containerCls=clsContainer;
+        textCls=clsText;
     }
 
 
@@ -18,13 +16,13 @@ const MeetingScheduleBody=({data,status})=>{
         {
             data.map(index=>(
                     <div key={index.id}>
-                        {(index.semMenu==="Important")?assignCls("invMeetingContainer dangerContainer"):
-                        (index.semMenu==="Link")?assignCls("invMeetingContainer primaryContainer"):
-                        (index.semMenu==="Note")?assignCls("invMeetingContainer warningContainer"):
-                        assignCls("invMeetingContainer darkContainer")}
+                        {(index.semMenu==="Important")?assignCls("invMeetingContainer dangerContainer","dangerText"):
+                        (index.semMenu==="Link")?assignCls("invMeetingContainer primaryContainer","primaryText"):
+                        (index.semMenu==="Note")?assignCls("invMeetingContainer warningContainer","warningText"):
+                        assignCls("invMeetingContainer darkContainer","darkText")}
                         <div className={containerCls} key={index.mid}>
-                            <h5> {index.name} </h5> 
-                            <p> {index.time}</p>
+                            <p className={textCls}> Date : {index.date}  Time : {index.time}  </p>
+                            <h5 className={textCls}> {index.name} </h5> 
                             <button className="btn btn-dark"> Get Details </button> 
                             <button className="btn btn-light"> Join meeting </button>  
                         </div>
