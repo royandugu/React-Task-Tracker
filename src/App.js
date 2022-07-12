@@ -1,3 +1,4 @@
+import {useState} from "react";
 import {BrowserRouter } from "react-router-dom";
 import {fetchTasks,fetchMeetings} from "./components/queryFetchers/fetcher";
 
@@ -12,7 +13,9 @@ import "./App.css";
 
 //Create Update and Delete
 const App=()=>{    
-    
+    const [containerHeight,setContainerHeight]=useState(window.innerHeight);
+    window.onresize=()=>setContainerHeight(window.innerHeight);
+
     return(
         <div className="container-fluid">
             <div className="row">
@@ -30,12 +33,12 @@ const App=()=>{
                 </div>
                 <div className="col-lg-5 col-12 taskListContainer">
                     <BrowserRouter>
-                        <TaskLister fetcher={fetchTasks}/>
+                        <TaskLister fetcher={fetchTasks} containerHeight={containerHeight}/>
                     </BrowserRouter>
                 </div>
                 <div className="col-lg-5 col-12 d-none d-lg-block">
                     <BrowserRouter>
-                        <MeetingSchedulesHeader fetcher={fetchMeetings}/>
+                        <MeetingSchedulesHeader fetcher={fetchMeetings} containerHeight={containerHeight}/>
                     </BrowserRouter>
                 </div>
             </div>

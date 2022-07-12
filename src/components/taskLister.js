@@ -21,15 +21,12 @@ const barMover=(pName)=>{
 }
 
 
-const TaskLister=({fetcher})=>{
+const TaskLister=({fetcher,containerHeight})=>{
     const {data,status}=useQuery("tasks",fetcher);
     const [task,setTask]=useState([]);
-    const [containerHeight,setContainerHeight]=useState(window.innerHeight);
-    
-    window.onresize=()=>setContainerHeight(window.innerHeight);
     const {mutate:deleter}=useMutation((id)=>deleteTask(id));
 
-    const location=useLocation();
+    const location=useLocation(); 
     
     useEffect(()=>{
         barMover(location.pathname);         
