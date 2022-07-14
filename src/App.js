@@ -42,7 +42,7 @@ const App=()=>{
                     </BrowserRouter>
                 </div>
             </div>
-            <div className="bottomBarNavigation d-block d-lg-none">
+            <div className="bottomBarNavigation bg-dark d-block d-lg-none">
                 <div className="bottomButtonContainer">
                     <BrowserRouter>
                         <BottomBarNavigation/>
