@@ -1,21 +1,24 @@
+import {GiNotebook} from "react-icons/gi";
+import {IoIosPeople} from "react-icons/io";
 import "./bottomBarNavigation.css";
 const BottomBarNavigation=()=>{
-    const restContainer=document.querySelector(".restContainer");
     const showMeeting=()=>{
-        restContainer.classList.remove("slideRight");
-        restContainer.classList.add("slideLeft");
+        document.querySelector(".meetingBar").classList.add("selected");
+        document.querySelector(".taskBar").classList.remove("selected");
     }
     const showTask=()=>{
-        restContainer.classList.remove("slideLeft");
-        restContainer.classList.add("slideRight");
+        document.querySelector(".meetingBar").classList.remove("selected");
+        document.querySelector(".taskBar").classList.add("selected");
     }
     return(
         <>
-            <div className="taskBar" onClick={showTask}>
-                <h5> Today Task  </h5>
+            <div className="taskBar selected" onClick={showTask}>
+                <GiNotebook className="taskIcon"/>
+                <p> Today Task  </p>
             </div>
             <div className="meetingBar" onClick={showMeeting}>
-                <h5> Meetings </h5> 
+                <IoIosPeople className="meetingIcon"/>
+                <p> Meetings </p> 
             </div>
         
         </>        
