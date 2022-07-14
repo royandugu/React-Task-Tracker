@@ -49,6 +49,22 @@
 .warningText{
     color:#966d34;
 }
+.btn{
+    color:white;
+    font-weight:bold;
+}
+.btn:hover{
+    color:white !important;
+}
 .darkText{
     color:#292b2c;
+}
+.btnDangerDark{
+    background:#a1423f;
+}
+.btnPrimaryDark{
+    background:#094d88;
+}
+.btnWarningDark{
+    background:#966d34;
 }

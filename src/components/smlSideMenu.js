@@ -33,7 +33,6 @@ const SmlSideMenu=()=>{
                 <li className="nav-item">
                     <Link to=" " className="nav-link"> Planning </Link>
                 </li>
-                <button className="btn btn-primary meetingsButton"> Meetings </button>
             </ul>
             <FaBars className="text-primary" onClick={()=>{
                 const smlMenu=document.querySelector(".smlProps");
