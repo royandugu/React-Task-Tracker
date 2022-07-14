@@ -3,9 +3,11 @@ import "./meetingScheduleBody.css";
 const MeetingScheduleBody=({data,status,containerHeight})=>{
     let containerCls;
     let textCls;
-    const assignCls=(clsContainer,clsText)=>{
+    let btnCls;
+    const assignCls=(clsContainer,clsText,clsButton)=>{
         containerCls=clsContainer;
         textCls=clsText;
+        btnCls=clsButton;
     }
 
 
@@ -16,15 +18,14 @@ const MeetingScheduleBody=({data,status,containerHeight})=>{
         {
             data.map(index=>(
                     <div key={index.id}>
-                        {(index.semMenu==="Important")?assignCls("invMeetingContainer dangerContainer","dangerText"):
-                        (index.semMenu==="Link")?assignCls("invMeetingContainer primaryContainer","primaryText"):
-                        (index.semMenu==="Note")?assignCls("invMeetingContainer warningContainer","warningText"):
-                        assignCls("invMeetingContainer darkContainer","darkText")}
+                        {(index.semMenu==="Important")?assignCls("invMeetingContainer dangerContainer","dangerText","btn btnDangerDark"):
+                        (index.semMenu==="Link")?assignCls("invMeetingContainer primaryContainer","primaryText","btn btnPrimaryDark"):
+                        (index.semMenu==="Note")?assignCls("invMeetingContainer warningContainer","warningText","btn btnWarningDark"):
+                        assignCls("invMeetingContainer darkContainer","darkText","btn btnDark")}
                         <div className={containerCls} key={index.mid}>
                             <p className={textCls}> Date : {index.date}  Time : {index.time}  </p>
                             <h5 className={textCls}> {index.name} </h5> 
-                            <button className="btn btn-dark"> Get Details </button> 
-                            <button className="btn btn-light"> Join meeting </button>  
+                            <button className={btnCls}> Details </button> 
                         </div>
                     </div>
             ))
