@@ -39,3 +39,8 @@
     transition: 1s ease-in-out;
     transform: translateX(0%);
 }
+@media only screen and (min-width: 900px){
+    .bottomBarNavigation{
+        width: 460px;
+    }   
+}
