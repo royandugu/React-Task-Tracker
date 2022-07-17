@@ -52,6 +52,7 @@
 .btn{
     color:white;
     font-weight:bold;
+    transition:.5s ease-in-out;
 }
 .btn:hover{
     color:white !important;
@@ -62,9 +63,18 @@
 .btnDangerDark{
     background:#a1423f;
 }
+.btnDangerDark:hover{
+    background:#6d2c2a;
+}
 .btnPrimaryDark{
     background:#094d88;
+}
+.btnPrimaryDark:hover{
+    background:#073761;
 }
 .btnWarningDark{
     background:#966d34;
 }
+.btnWarningDark:hover{
+    background:#6d5026;
+} 
