@@ -25,7 +25,7 @@ const Renderer=({tasks,customTasks,setTask,setCustomTask,deleter})=>{
             {(currentTasks.length>0)?currentTasks.map(index=>(
                 <div className="indvTasks" key={index.id}>
                     <div>
-                        <input type="checkbox" className="taskChecker" onClick={()=>{
+                        <input type="checkbox" style={clicked?{pointerEvents:"none"}:{pointerEvents:"all"}} className="taskChecker" onClick={()=>{
                             (setCustomTask) && setCustomTask(customTasks.filter(indx=>indx.id!==index.id));
                             setTask(tasks.filter(indx=>indx.id!==index.id));
                             deleter(index.id);
