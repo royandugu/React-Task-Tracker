@@ -1,6 +1,6 @@
 import {useState,useEffect} from "react";
 import Renderer  from "./renderer";
-import "./all.css";
+import "./renderer.css";
 
 const Important=({tasks,setTask,deleter})=>{
     const [impTasks, setImpTask]=useState(tasks.filter(index=>index.semMenu==="Important"));

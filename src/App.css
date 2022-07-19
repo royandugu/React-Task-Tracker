@@ -27,6 +27,10 @@ body{
 @media only screen and (max-width: 991px) {
     .taskListContainer{
         margin-top:30px;
+        width: 100% !important;
+    }
+    .meetingSchedulesContainer{
+        width:100% !important;
     }
     body{
         overflow-y:scroll !important;        

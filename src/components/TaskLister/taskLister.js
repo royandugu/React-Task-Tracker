@@ -1,9 +1,9 @@
 import {useEffect, useState} from "react";
 import {useLocation,Link} from "react-router-dom";
 import { useQuery,useMutation} from "react-query";
-import { deleteTask } from "./queryFetchers/fetcher";
+import { deleteTask } from "../QueryFetchers/fetcher";
 
-import QueryState from "./queryState";
+import QueryState from "../QueryState/queryState";
 
 import "./taskLister.css";
 

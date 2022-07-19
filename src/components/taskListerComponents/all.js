@@ -1,5 +1,5 @@
 import Renderer from "./renderer";
-import "./all.css";
+import "./renderer.css";
 
 
 const All=({tasks,setTask,deleter})=>{

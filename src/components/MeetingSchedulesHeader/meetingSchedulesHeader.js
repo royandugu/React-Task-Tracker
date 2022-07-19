@@ -1,6 +1,6 @@
 import {FaUser,FaCheckSquare} from "react-icons/fa";
 import { useQuery } from "react-query";
-import MeetingScheduleBody from "./meetingScheduleBody";
+import MeetingScheduleBody from "../MeetingSchedulesBody/meetingSchedulesBody";
 import "./meetingSchedulesHeader.css";
 
 

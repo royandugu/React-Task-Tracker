@@ -1,5 +1,5 @@
 import { useQuery } from "react-query";
-import {fetchTasks} from "../queryFetchers/fetcher";
+import {fetchTasks} from "../../QueryFetchers/fetcher";
 
 
 import "./indvTaskDesc.css";

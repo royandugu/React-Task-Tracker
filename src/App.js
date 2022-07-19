@@ -1,12 +1,12 @@
 import {useState} from "react";
 import {BrowserRouter } from "react-router-dom";
-import {fetchTasks,fetchMeetings} from "./components/queryFetchers/fetcher";
+import {fetchTasks,fetchMeetings} from "./components/QueryFetchers/fetcher";
 
-import SideMenu from "./components/menu";
-import TaskLister from "./components/taskLister";
-import MeetingSchedulesHeader from "./components/meetingSchedulesHeader";
-import SmlSideMenu from "./components/smlSideMenu";
-import BottomBarNavigation from "./components/bottomBarNavigation";
+import SideMenu from "./components/MenuLg/menuLg";
+import TaskLister from "./components/TaskLister/taskLister";
+import MeetingSchedulesHeader from "./components/MeetingSchedulesHeader/meetingSchedulesHeader";
+import SmlSideMenu from "./components/MenuSml/smlSideMenu";
+import BottomBarNavigation from "./components/BottomBarNavigation/bottomBarNavigation";
 
 import "./App.css";
 
@@ -31,16 +31,22 @@ const App=()=>{
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-5 col-12 taskListContainer">
+                <div className="col-lg-5 taskListContainer d-none d-lg-block">
                     <BrowserRouter>
                         <TaskLister fetcher={fetchTasks} containerHeight={containerHeight}/>
                     </BrowserRouter>
                 </div>
-                <div className="col-lg-5 col-12 d-none d-lg-block">
+                <div className="col-lg-5 d-none d-lg-block">
                     <BrowserRouter>
                         <MeetingSchedulesHeader fetcher={fetchMeetings} containerHeight={containerHeight}/>
                     </BrowserRouter>
                 </div>
+            </div>
+            <div className="d-block d-lg-none">
+                <BrowserRouter className="flexMenuDisplay">
+                    <TaskLister fetcher={fetchTasks} containerHeight={containerHeight}/>
+                    <MeetingSchedulesHeader fetcher={fetchMeetings} containerHeight={containerHeight}/>
+                </BrowserRouter>
             </div>
             <div className="bottomBarNavigation bg-dark d-block d-lg-none">
                 <div className="bottomButtonContainer">

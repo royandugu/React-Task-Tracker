@@ -1,4 +1,4 @@
-import "./meetingScheduleBody.css";
+import "./meetingSchedulesBody.css";
 
 const MeetingScheduleBody=({data,status,containerHeight})=>{
     let containerCls;

@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Route from "./routes";
+import Route from "../Routes/routes";
 
 
 import "./queryState.css";
@@ -54,7 +54,7 @@ const QueryState=({data,queryFetch,setTask,status,deleter})=>{
                     </svg>
                 </div>
             )
-        }
+        } 
         if (status === "error") {
             return (
                 <div className="errorMessage">

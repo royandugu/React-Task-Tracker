@@ -1,5 +1,5 @@
 import { useState } from "react";
-import IndvTaskDesc from "./indvTaskDesc";
+import IndvTaskDesc from "./IndvTaskDesc/indvTaskDesc";
 
 
 const Renderer=({tasks,customTasks,setTask,setCustomTask,deleter})=>{
