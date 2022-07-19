@@ -8,4 +8,4 @@ export const fetchMeetings=async ()=>{
 }
 export const deleteTask=async (id)=>{
     await fetch(`http://localhost:5000/tasks/${id}`,{method:"DELETE"})
-}
+ }
