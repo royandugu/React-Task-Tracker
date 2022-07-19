@@ -8,6 +8,7 @@ import MeetingSchedulesHeader from "./components/MeetingSchedulesHeader/meetingS
 import SmlSideMenu from "./components/MenuSml/smlSideMenu";
 import BottomBarNavigation from "./components/BottomBarNavigation/bottomBarNavigation";
 
+
 import "./App.css";
 
 
@@ -48,7 +49,7 @@ const App=()=>{
                     <MeetingSchedulesHeader fetcher={fetchMeetings} containerHeight={containerHeight}/>
                 </BrowserRouter>
             </div>
-            <div className="bottomBarNavigation bg-dark d-block d-lg-none">
+           <div className="bottomBarNavigation bg-dark d-block d-lg-none">
                 <div className="bottomButtonContainer">
                     <BrowserRouter>
                         <BottomBarNavigation/>
