@@ -1,5 +1,5 @@
-import Renderer from "./renderer";
-import "./renderer.css";
+import Renderer from "../Renderer/renderer";
+import "../Renderer/renderer.css";
 
 
 const All=({tasks,setTask,deleter})=>{

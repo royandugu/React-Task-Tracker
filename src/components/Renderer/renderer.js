@@ -1,7 +1,8 @@
 import { useState } from "react";
-import IndvTaskDesc from "./IndvTaskDesc/indvTaskDesc";
+import IndvTaskDesc from "../TaskListerComponents/IndvTaskDesc/indvTaskDesc";
 
 
+//Add a boolean value that verifies if this is a task or not. If task send task else meeting
 const Renderer=({tasks,customTasks,setTask,setCustomTask,deleter})=>{
     const [clicked,setClicked]=useState(false);
     const [id,setId]=useState(5);
