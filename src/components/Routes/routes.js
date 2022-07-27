@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 
-import All from "../TaskListerComponents/all";
-import Important from "../TaskListerComponents/Important";
-import Notes from "../TaskListerComponents/Notes";
-import Links from "../TaskListerComponents/Links";
+import All from "../SubDivision/all";
+import Important from "../SubDivision/Important";
+import Links from "../SubDivision/Links";
+import Notes from "../SubDivision/Notes";
 
 const RouteMaker = ({data,deleter,setTask}) => {
     return (
