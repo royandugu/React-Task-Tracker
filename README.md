@@ -13,6 +13,10 @@
 2. Easier UI for mobile users
 3. Render individual task descriptions
 
+
+***Issues***
+1. Typeerror: Renderer:27 cannot read properties of length
+
 --Datas are taken from a file db.json created after the installation of JSON-server--
   
 //Additionals  
