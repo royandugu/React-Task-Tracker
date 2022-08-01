@@ -3,7 +3,9 @@ import IndvTaskDesc from "../TaskListerComponents/IndvTaskDesc/indvTaskDesc";
 
 
 //Add a boolean value that verifies if this is a task or not. If task send task else meeting
-const Renderer=({tasks,customTasks,setTask,setCustomTask,deleter})=>{
+const Renderer=({tasks,customTasks,setTask,setCustomTask,deleter,isTask})=>{
+    //Just for now
+    
     const [clicked,setClicked]=useState(false);
     const [id,setId]=useState(5);
 
@@ -20,7 +22,7 @@ const Renderer=({tasks,customTasks,setTask,setCustomTask,deleter})=>{
         setId(id);
         setClicked(true);
     }
-    
+    if(isTask){        
     return(
         <form className="allTask">
             {(currentTasks.length>0)?currentTasks.map(index=>(
@@ -53,5 +55,12 @@ const Renderer=({tasks,customTasks,setTask,setCustomTask,deleter})=>{
             <IndvTaskDesc id={id} clicked={clicked}/>
         </form>
     )
+    }
+    else{
+        console.log(isTask);
+        return(
+            <h1> For Meetings </h1>
+        )
+    }
 }
 export default Renderer;

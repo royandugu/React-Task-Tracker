@@ -7,7 +7,7 @@ const Links=({tasks,setTask,deleter})=>{
     useEffect(()=>setLink(tasks.filter(index=>index.semMenu==="Link")),[tasks]);
     
     return(
-        <Renderer tasks={tasks} customTasks={links} setTask={setTask} setCustomTask={setLink} deleter={deleter}/>
+        <Renderer tasks={tasks} customTasks={links} setTask={setTask} setCustomTask={setLink} deleter={deleter} isTask={true}/>
     )
 }
 export default Links;

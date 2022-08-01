@@ -11,7 +11,7 @@ import "./taskLister.css";
 
 
 
-const TaskLister=({fetcher,containerHeight  })=>{
+const TaskLister=({fetcher,containerHeight})=>{
     const {data,status}=useQuery("tasks",fetcher);
     const [task,setTask]=useState([]);
     const {mutate:deleter}=useMutation((id)=>deleteTask(id));
@@ -24,7 +24,7 @@ const TaskLister=({fetcher,containerHeight  })=>{
                 <NavigatorTop/>
             </div>
             <div className="restContainer" style={{height:containerHeight-165}}>
-                <QueryState stateData={task} queryFetch={data} setData={setTask} status={status} deleter={deleter}></QueryState>
+                <QueryState stateData={task} queryFetch={data} setData={setTask} status={status} deleter={deleter} isTask={true}></QueryState>
             </div>
         </div>
     );

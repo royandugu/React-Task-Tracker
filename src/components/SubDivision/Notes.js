@@ -7,7 +7,7 @@ const Notes=({tasks,setTask,deleter})=>{
     useEffect(()=>setNote(tasks.filter(index=>index.semMenu==="Note")),[tasks]);
 
     return(
-        <Renderer tasks={tasks} customTasks={notes} setTask={setTask} setCustomTask={setNote} deleter={deleter}/>
+        <Renderer tasks={tasks} customTasks={notes} setTask={setTask} setCustomTask={setNote} deleter={deleter} isTask={true}/>
     )
 }
 export default Notes;

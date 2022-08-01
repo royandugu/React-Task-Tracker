@@ -4,7 +4,7 @@ import Route from "../Routes/routes";
 
 import "./queryState.css";
 
-const QueryState=({stateData,queryFetch,setData,status,deleter})=>{
+const QueryState=({stateData,queryFetch,setData,status,deleter,isTask})=>{
     
     useEffect(()=>{
         if(status!=="loading" && status!=="error") setData(queryFetch);
@@ -69,7 +69,7 @@ const QueryState=({stateData,queryFetch,setData,status,deleter})=>{
 
 
         return (
-            <Route stateData={stateData} setData={setData} deleter={deleter}></Route>
+            <Route stateData={stateData} setData={setData} deleter={deleter} isTask={isTask}></Route>
         )
 }
 

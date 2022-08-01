@@ -9,7 +9,9 @@ import "./meetingSchedulesHeader.css";
 const MeetingSchedule=({fetcher,containerHeight})=>{
     const {data,status}=useQuery("Key",fetcher);
     const [meetingData,setMeetingData]=useState();
-    
+    const deleter=()=>{
+        //Delete function for meetings
+    }    
     return(
         <div className="meetingsHeaderContainer"> 
             <div className="iContainer">
@@ -17,7 +19,7 @@ const MeetingSchedule=({fetcher,containerHeight})=>{
             </div>
             <div className="meetingBodyContainer">
                 <h5 className="containerTitle"> Meeting Schedules </h5>
-                <MeetingScheduleBody stateData={meetingData} queryFetch={data} setData={setMeetingData} status={status} containerHeight={containerHeight}/>
+                <MeetingScheduleBody stateData={meetingData} queryFetch={data} setData={setMeetingData} status={status} containerHeight={containerHeight} deleter={deleter} isTask={false}/>
             </div>
         </div>
     )

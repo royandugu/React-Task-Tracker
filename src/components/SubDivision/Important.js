@@ -7,7 +7,7 @@ const Important=({tasks,setTask,deleter})=>{
     useEffect(()=>setImpTask(tasks.filter(index=>index.semMenu==="Important")),[tasks]);
     
     return(
-        <Renderer tasks={tasks} customTasks={impTasks} setTask={setTask} setCustomTask={setImpTask} deleter={deleter}/>
+        <Renderer tasks={tasks} customTasks={impTasks} setTask={setTask} setCustomTask={setImpTask} deleter={deleter} isTask={true}/>
     )
 }
 export default Important;
