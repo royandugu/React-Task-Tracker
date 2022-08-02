@@ -2,9 +2,9 @@ import Renderer from "../Renderer/renderer";
 import "../Renderer/renderer.css";
 
 
-const All=({tasks,setTask,deleter})=>{
+const All=({stateData,setData,deleter})=>{
     return(
-        <Renderer tasks={tasks} setTask={setTask} deleter={deleter} isTask={true}/>
+        <Renderer tasks={stateData} setTask={setData} deleter={deleter} isTask={true}/>
     )
 }
 

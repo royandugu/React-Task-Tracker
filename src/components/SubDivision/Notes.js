@@ -2,12 +2,12 @@ import {useState,useEffect} from "react";
 import Renderer from "../Renderer/renderer";
 import "../Renderer/renderer.css";
 
-const Notes=({tasks,setTask,deleter})=>{
-    const [notes, setNote]=useState(tasks.filter(index=>index.semMenu==="Note"));
-    useEffect(()=>setNote(tasks.filter(index=>index.semMenu==="Note")),[tasks]);
+const Notes=({stateData,setData,deleter})=>{
+    const [notes, setNote]=useState(stateData.filter(index=>index.semMenu==="Note"));
+    useEffect(()=>setNote(stateData.filter(index=>index.semMenu==="Note")),[stateData]);
 
     return(
-        <Renderer tasks={tasks} customTasks={notes} setTask={setTask} setCustomTask={setNote} deleter={deleter} isTask={true}/>
+        <Renderer tasks={stateData} customTasks={notes} setTask={setData} setCustomTask={setNote} deleter={deleter} isTask={true}/>
     )
 }
 export default Notes;

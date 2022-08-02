@@ -2,12 +2,11 @@ import {useState,useEffect} from "react";
 import Renderer from "../Renderer/renderer";
 import "../Renderer/renderer.css";
 
-const Links=({tasks,setTask,deleter})=>{
-    const [links, setLink]=useState(tasks.filter(index=>index.semMenu==="Link"));
-    useEffect(()=>setLink(tasks.filter(index=>index.semMenu==="Link")),[tasks]);
-    
+const Links=({stateData,setData,deleter})=>{
+    const [links, setLink]=useState(stateData.filter(index=>index.semMenu==="Link"));
+    useEffect(()=>setLink(stateData.filter(index=>index.semMenu==="Link")),[stateData]);
     return(
-        <Renderer tasks={tasks} customTasks={links} setTask={setTask} setCustomTask={setLink} deleter={deleter} isTask={true}/>
+        <Renderer tasks={stateData} customTasks={links} setTask={setData} setCustomTask={setLink} deleter={deleter} isTask={true}/>
     )
 }
 export default Links;
