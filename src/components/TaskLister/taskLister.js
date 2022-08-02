@@ -16,7 +16,6 @@ const TaskLister=({fetcher,containerHeight})=>{
     const [task,setTask]=useState([]);
     const {mutate:deleter}=useMutation((id)=>deleteTask(id));
     
-    
     return(
         <div>
             <div className="headerTop">
