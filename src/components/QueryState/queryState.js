@@ -7,9 +7,9 @@ import "./queryState.css";
 const QueryState=({stateData,queryFetch,setData,status,deleter,isTask})=>{
     
     useEffect(()=>{
-        if(status!=="loading" && status!=="error") setData(queryFetch);
-    },[queryFetch])
-    
+        if(status==="success") setData(queryFetch);
+    },[queryFetch,setData,status])
+ 
     if (status === "loading") {
             return (
                 <div className="loading">
@@ -66,8 +66,6 @@ const QueryState=({stateData,queryFetch,setData,status,deleter,isTask})=>{
                 </div>
             );
         }
-
-
         return (
             <Route stateData={stateData} setData={setData} deleter={deleter} isTask={isTask}></Route>
         )
