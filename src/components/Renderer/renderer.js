@@ -22,7 +22,7 @@ const Renderer=({tasks,customTasks,setTask,setCustomTask,deleter,isTask})=>{
         setId(id);
         setClicked(true);
     }
-    if(isTask){        
+    if(isTask){       
     return(
         <form className="allTask">
             {(currentTasks.length>0)?currentTasks.map(index=>(
