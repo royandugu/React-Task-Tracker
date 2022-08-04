@@ -3,15 +3,15 @@ import IndvTaskDesc from "../TaskListerComponents/IndvTaskDesc/indvTaskDesc";
 
 
 //Add a boolean value that verifies if this is a task or not. If task send task else meeting
-const Renderer=({tasks,customTasks,setTask,setCustomTask,deleter,isTask})=>{
+const Renderer=({stateData,customData,setData,setCustomTask,deleter,isTask})=>{
     //Just for now
     
     const [clicked,setClicked]=useState(false);
     const [id,setId]=useState(5);
 
     let buttonColor;
-    let currentTasks;
-    (customTasks)?currentTasks=customTasks:currentTasks=tasks;
+    let currentData;
+    (customData)?currentData=customData:currentData=stateData;
 
     //To Prevent 'Too many Re-renders' 
     const setbuttonColor=(btnClr)=>{
@@ -25,12 +25,12 @@ const Renderer=({tasks,customTasks,setTask,setCustomTask,deleter,isTask})=>{
     if(isTask){       
     return(
         <form className="allTask">
-            {(currentTasks.length>0)?currentTasks.map(index=>(
+            {(currentData.length>0)?currentData.map(index=>(
                 <div className="indvTasks" key={index.id}>
                     <div>
                         <input type="checkbox" style={clicked?{pointerEvents:"none"}:{pointerEvents:"all"}} className="taskChecker" onClick={()=>{
-                            (setCustomTask) && setCustomTask(customTasks.filter(indx=>indx.id!==index.id));
-                            setTask(tasks.filter(indx=>indx.id!==index.id));
+                            (setCustomTask) && setCustomTask(customData.filter(indx=>indx.id!==index.id));
+                            setData(stateData.filter(indx=>indx.id!==index.id));
                             deleter(index.id);
                         }}
                         />
@@ -57,9 +57,14 @@ const Renderer=({tasks,customTasks,setTask,setCustomTask,deleter,isTask})=>{
     )
     }
     else{
-        console.log(isTask);
         return(
-            <h1> For Meetings </h1>
+            <div className="meetingColumn">
+                {(currentData.length>0)?currentData.map(index=>(
+                    <div> {/** Test*/}
+                        <h5> {index.name} </h5>
+                    </div>
+                )):<h5> No upcoming or ongoing meetings </h5> }
+            </div>
         )
     }
 }

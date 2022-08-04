@@ -2,12 +2,12 @@ import {useState,useEffect} from "react";
 import Renderer from "../Renderer/renderer";
 import "../Renderer/renderer.css";
 
-const Important=({stateData,setData,deleter})=>{
-    const [impTasks, setImpTask]=useState(stateData.filter(index=>index.semMenu==="Important"));
-    useEffect(()=>setImpTask(stateData.filter(index=>index.semMenu==="Important")),[stateData]);
+const Important=({stateData,setData,deleter,isTask})=>{
+    const [impData, setImpData]=useState(stateData.filter(index=>index.semMenu==="Important"));
+    useEffect(()=>setImpData(stateData.filter(index=>index.semMenu==="Important")),[stateData]);
     
     return(
-        <Renderer tasks={stateData} customTasks={impTasks} setTask={setData} setCustomTask={setImpTask} deleter={deleter} isTask={true}/>
+        <Renderer stateData={stateData} customData={impData} setData={setData} setCustomTask={setImpData} deleter={deleter} isTask={isTask}/>
     )
 }
 export default Important;
