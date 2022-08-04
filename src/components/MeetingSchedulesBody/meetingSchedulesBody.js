@@ -1,10 +1,10 @@
 import QueryState from "../QueryState/queryState";
 import "./meetingSchedulesBody.css";
 
-const MeetingScheduleBody=({stateData,queryFetch,setData,status,containerHeight,deleter,isTask})=>{
+const MeetingScheduleBody=({stateData,queryFetch,setData,status,containerHeight,deleter})=>{
     return(
         <div className="meetingContainer" style={{height:containerHeight-165}}>
-            <QueryState stateData={stateData} queryFetch={queryFetch} setData={setData} status={status} deleter={deleter} isTask={isTask}/>
+            <QueryState stateData={stateData} queryFetch={queryFetch} setData={setData} status={status} deleter={deleter} isTask={false}/>
         </div>
     );
 }
