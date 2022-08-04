@@ -19,7 +19,7 @@ const MeetingSchedule=({fetcher,containerHeight})=>{
             </div>
             <div className="meetingBodyContainer">
                 <h5 className="containerTitle"> Meeting Schedules </h5>
-                <MeetingScheduleBody stateData={meetingData} queryFetch={data} setData={setMeetingData} status={status} containerHeight={containerHeight} deleter={deleter} isTask={false}/>
+                <MeetingScheduleBody stateData={meetingData} queryFetch={data} setData={setMeetingData} status={status} containerHeight={containerHeight} deleter={deleter}/>
             </div>
         </div>
     )
