@@ -2,7 +2,7 @@ import {useState} from "react";
 import { useQuery,useMutation} from "react-query";
 import { deleteTask } from "../QueryFetchers/fetcher";
 
-import QueryState from "../QueryState/queryState";
+import QueryState from "../QueryState/TaskQueryState/queryState";
 import NavigatorTop from "../NavigatorTop/navigatorTop";
 
 import "./taskLister.css";

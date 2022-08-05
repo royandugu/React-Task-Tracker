@@ -1,4 +1,4 @@
-import QueryState from "../QueryState/queryState";
+import QueryState from "../QueryState/TaskQueryState/queryState";
 import "./meetingSchedulesBody.css";
 
 const MeetingScheduleBody=({stateData,queryFetch,setData,status,containerHeight,deleter})=>{
