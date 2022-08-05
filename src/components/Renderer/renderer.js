@@ -3,7 +3,7 @@ import IndvTaskDesc from "../TaskListerComponents/IndvTaskDesc/indvTaskDesc";
 
 
 //Add a boolean value that verifies if this is a task or not. If task send task else meeting
-const Renderer=({stateData,customData,setData,setCustomTask,deleter,isTask})=>{
+const Renderer=({stateData,customData,setData,setCustomTask,deleter})=>{
     //Just for now
     
     const [clicked,setClicked]=useState(false);
@@ -21,7 +21,6 @@ const Renderer=({stateData,customData,setData,setCustomTask,deleter,isTask})=>{
         setId(id);
         setClicked(true);
     }
-    if(isTask){       
     return(
         <form className="allTask">
             {(currentData.length>0)?currentData.map(index=>(
@@ -54,16 +53,5 @@ const Renderer=({stateData,customData,setData,setCustomTask,deleter,isTask})=>{
             <IndvTaskDesc id={id} clicked={clicked}/>
         </form>
     )
-    }
-    else{
-        return(
-            <div className="meetingColumn">
-                {console.log(currentData)}
-                {(currentData.length>0)?currentData.map(index=>(
-                    <h5> {index.name}</h5>
-                )):<h5>No meetings avaliable</h5> }
-            </div>
-        )
-    }
 }
 export default Renderer;
