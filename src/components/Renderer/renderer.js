@@ -12,7 +12,6 @@ const Renderer=({stateData,customData,setData,setCustomTask,deleter,isTask})=>{
     let buttonColor;
     let currentData;
     (customData)?currentData=customData:currentData=stateData;
-
     //To Prevent 'Too many Re-renders' 
     const setbuttonColor=(btnClr)=>{
         buttonColor=btnClr;
@@ -59,11 +58,10 @@ const Renderer=({stateData,customData,setData,setCustomTask,deleter,isTask})=>{
     else{
         return(
             <div className="meetingColumn">
+                {console.log(currentData)}
                 {(currentData.length>0)?currentData.map(index=>(
-                    <div> {/** Test*/}
-                        <h5> {index.name} </h5>
-                    </div>
-                )):<h5> No upcoming or ongoing meetings </h5> }
+                    <h5> {index.name}</h5>
+                )):<h5>No meetings avaliable</h5> }
             </div>
         )
     }

@@ -6,9 +6,9 @@ import "./meetingSchedulesHeader.css";
 
 
 
-const MeetingSchedule=({fetcher,containerHeight})=>{
+const MeetingScheduleHeader=({fetcher,containerHeight})=>{
     const {data,status}=useQuery("Key",fetcher);
-    const [meetingData,setMeetingData]=useState();
+    const [meetingData,setMeetingData]=useState([]);
     const deleter=()=>{
         //Delete function for meetings
     }    
@@ -24,4 +24,4 @@ const MeetingSchedule=({fetcher,containerHeight})=>{
         </div>
     )
 }
-export default MeetingSchedule;
+export default MeetingScheduleHeader;
