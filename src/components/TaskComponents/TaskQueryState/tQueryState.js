@@ -1,9 +1,7 @@
 import { useEffect } from "react";
-import TRoute from "../../Routes/TaskRoutes/tRoutes";
-import MRoute from "../../Routes/MeetingRoutes/mRoutes";
+import TRoute from "../TaskRoutes/tRoutes";
 
-
-import "./queryState.css";
+import "./tQueryState.css";
 
 const QueryState=({stateData,queryFetch,setData,status,deleter,isTask})=>{
     
@@ -69,8 +67,7 @@ const QueryState=({stateData,queryFetch,setData,status,deleter,isTask})=>{
         }
         return (
             <>
-                {(isTask)? <TRoute stateData={stateData} setData={setData} deleter={deleter} isTask={isTask}/>:
-                <MRoute stateData={stateData} setData={setData} deleter={deleter} isTask={isTask}/>}
+                <TRoute stateData={stateData} setData={setData} deleter={deleter} isTask={isTask}/>
             </>
         )
 }

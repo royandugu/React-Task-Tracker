@@ -1,5 +1,4 @@
-import Renderer from "../Renderer/renderer";
-import "../Renderer/renderer.css";
+import Renderer from "../TaskComponents/TaskRenderer/tRenderer";
 
 
 const All=({stateData,setData,deleter,isTask})=>{

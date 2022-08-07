@@ -12,6 +12,7 @@
 1. Render meetings
 2. Easier UI for mobile users
 3. Render individual task descriptions
+4. After the implementation of backend, SubDivisions will be removed and filtering will be done at the server side
 
 
 ***Issues***

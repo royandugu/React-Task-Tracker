@@ -1,53 +1,46 @@
 {
   "tasks": [
     {
-      "id":4,
-      "name":"Task A",
-      "semMenu":"Important",
-      "desc":"Task A description"
+      "id": 5,
+      "name": "Task B",
+      "semMenu": "Important",
+      "desc": "Task B description"
     },
     {
-      "id":5,
-      "name":"Task B",
-      "semMenu":"Important",
-      "desc":"Task B description"
-
-    },
-    {
-      "id":6,
-      "name":"Task C",
-      "semMenu":"Important",
-      "desc":"Task C description"
+      "id": 6,
+      "name": "Task C",
+      "semMenu": "Important",
+      "desc": "Task C description"
     },
     {
       "id": 7,
       "name": "Task D",
       "semMenu": "Note",
-      "desc":"Task D description"
+      "desc": "Task D description"
     },
     {
       "id": 8,
       "name": "Task E",
       "semMenu": "Note",
-      "desc":"Task E description"
+      "desc": "Task E description"
     },
     {
       "id": 10,
       "name": "Task G",
       "semMenu": "Link",
-      "desc":"Task G description"
+      "desc": "Task G description"
     },
     {
       "id": 11,
       "name": "Task H",
       "semMenu": "Link",
-      "desc":"Task H description"
+      "desc": "Task H description"
     },
     {
       "id": 12,
       "name": "Task I",
       "semMenu": "Link",
-      "desc":"Task I description"
+      "desc": "Task I description"
     }
   ],
   "Meetings": [
@@ -62,18 +55,18 @@
     {
       "name": "Meeting with our clients",
       "description": "A talk about the pros and cons of web 3.0",
-      "date":"9/12/2022",
+      "date": "9/12/2022",
       "time": "1 : 00 P.M.",
       "mid": 2,
-      "semMenu":"Note"
+      "semMenu": "Note"
     },
     {
-      "name":"NOSK meeting",
-      "description":"To talk about the front end of the main website",
-      "date":"7/12/2022",
-      "time":"1:30 A.M",
-      "mid":3,
-      "semMenu":"Link"
+      "name": "NOSK meeting",
+      "description": "To talk about the front end of the main website",
+      "date": "7/12/2022",
+      "time": "1:30 A.M",
+      "mid": 3,
+      "semMenu": "Link"
     }
   ]
 }

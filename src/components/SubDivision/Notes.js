@@ -1,6 +1,5 @@
 import {useState,useEffect} from "react";
-import Renderer from "../Renderer/renderer";
-import "../Renderer/renderer.css";
+import Renderer from "../TaskComponents/TaskRenderer/tRenderer";
 
 const Notes=({stateData,setData,deleter,isTask})=>{
     const [notes, setNote]=useState(stateData.filter(index=>index.semMenu==="Note"));

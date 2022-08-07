@@ -1,7 +1,7 @@
 import { useState } from "react";
-import IndvTaskDesc from "../TaskListerComponents/IndvTaskDesc/indvTaskDesc";
+import IndvTaskDesc from "../IndvTaskDesc/indvTaskDesc";
 
-
+import "./tRenderer.css";
 //Add a boolean value that verifies if this is a task or not. If task send task else meeting
 const Renderer=({stateData,customData,setData,setCustomTask,deleter})=>{
     //Just for now
