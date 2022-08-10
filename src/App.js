@@ -4,7 +4,7 @@ import {fetchTasks,fetchMeetings} from "./components/QueryFetchers/fetcher";
 
 import SideMenu from "./components/MenuLg/menuLg";
 import TaskLister from "./components/TaskComponents/TaskLister/taskLister";
-import MeetingSchedulesHeader from "./components/MeetingSchedulesHeader/meetingSchedulesHeader";
+import MeetingSchedulesHeader from "./components/MeetingComponents/MeetingSchedulesHeader/meetingSchedulesHeader";
 import SmlSideMenu from "./components/MenuSml/smlSideMenu";
 import BottomBarNavigation from "./components/BottomBarNavigation/bottomBarNavigation";
 
