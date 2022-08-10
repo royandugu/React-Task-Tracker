@@ -15,6 +15,14 @@
     display:flex;
     justify-content: flex-end;
     padding-right:10px;
+    border-bottom:1px solid rgb(221, 221, 221);
+    cursor:pointer;
+}
+.closeButtonContainer .closeIcon{
+    color:white;
+    font-size:24px;
+    margin-top:5px;
+    margin-bottom:5px;
 }
 .modelBox h3{
     text-align:center;

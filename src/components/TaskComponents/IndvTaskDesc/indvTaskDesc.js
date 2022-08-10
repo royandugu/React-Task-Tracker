@@ -1,11 +1,12 @@
 import { useQuery } from "react-query";
 import {fetchTasks} from "../../QueryFetchers/fetcher";
+import {AiOutlineCloseCircle} from "react-icons/ai"
 
 
 import "./indvTaskDesc.css";
 
 
-const IndvTaskDesc=({id,clicked})=>{
+const IndvTaskDesc=({id,clicked,setClicked})=>{
     const {data,status}=useQuery(`task${id}`,fetchTasks);
     const modelClsName=(clicked)?"modelBox show":"modelBox hide";
     
@@ -32,7 +33,7 @@ const IndvTaskDesc=({id,clicked})=>{
     return(
         <div className={modelClsName}>
             <div className="closeButtonContainer bg-dark">
-                <h5> Here to contain cross icon </h5>
+                <AiOutlineCloseCircle className="closeIcon" onClick={()=>setClicked(false)}/>
             </div>
             <div className="contentContainer">
                 <h3 className="header"> {title} </h3> 
