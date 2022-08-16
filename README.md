@@ -17,5 +17,8 @@ the admin can assign the tasks and the meetings to the respective employees. <p>
 3. Meeting components
 <br>
 
+**Initial test**
+Putting up 2 filters for task and meetings, that will later be be done by the backend
+
 **NOTE**:- The filtering of task is currently done in the front end which will be later transferred to
 the backend. 
