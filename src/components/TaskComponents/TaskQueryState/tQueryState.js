@@ -1,9 +1,9 @@
 import { useEffect } from "react";
-import TRoute from "../TaskRoutes/tRoutes";
+import TRouter from "../TaskRoutes/tRoutes";
 
 import "./tQueryState.css";
 
-const QueryState=({stateData,queryFetch,setData,status,deleter,isTask})=>{
+const QueryState=({stateData,queryFetch,setData,status,deleter})=>{
     
     useEffect(()=>{
         if(status==="success") setData(queryFetch);
@@ -67,7 +67,7 @@ const QueryState=({stateData,queryFetch,setData,status,deleter,isTask})=>{
         }
         return (
             <>
-                <TRoute stateData={stateData} setData={setData} deleter={deleter} isTask={isTask}/>
+                <TRouter stateData={stateData} setData={setData} deleter={deleter}/>
             </>
         )
 }

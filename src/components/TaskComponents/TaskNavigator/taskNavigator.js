@@ -1,7 +1,7 @@
 import {useEffect} from "react";
 import {useLocation,Link} from "react-router-dom";
 
-import "./navigatorTop.css";
+import "./taskNavigator.css";
 
 const barMover=(pName)=>{
     let i;
