@@ -17,6 +17,10 @@ the admin can assign the tasks and the meetings to the respective employees. <p>
 3. Meeting components
 <br>
 
+**TO DO FOR NOW**
+1. Figure out the common query system that will handle response to the query fetch status 
+    and the response will be accessed by taskQueryState and meetingQueryState.
+
 **Initial test**
 Putting up 2 filters for task and meetings, that will later be be done by the backend
 
