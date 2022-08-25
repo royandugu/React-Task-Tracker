@@ -22,7 +22,6 @@
     width:30px;
     position: relative;
 }
-
 .taskChecker::after{
     font-family: "Font Awesome 5 Free";
     font-weight: 500;

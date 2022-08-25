@@ -2,7 +2,7 @@ import {useState} from "react";
 import { useQuery,useMutation} from "react-query";
 import { deleteTask } from "../../QueryFetchers/fetcher";
 
-import TQueryState from "../TaskQueryState/tQueryState";
+import QueryState from "../../QueryState/queryState";
 import TaskNavigator from "../TaskNavigator/taskNavigator";
 
 import "./taskLister.css";
@@ -23,7 +23,7 @@ const TaskLister=({fetcher,containerHeight})=>{
                 <TaskNavigator/>
             </div>
             <div className="restContainer" style={{height:containerHeight-165}}>
-                <TQueryState stateData={task} queryFetch={data} setData={setTask} status={status} deleter={deleter}/>
+                <QueryState stateData={task} queryFetch={data} setData={setTask} status={status} deleter={deleter} isTask={true}/>
             </div>
         </div>
     );
