@@ -5,6 +5,11 @@
     padding:20px;
     border-radius:10px;
     color:white;
+    cursor:pointer;
+    transition:.5s ease-in-out;
+}
+.meetingContainerChild:hover{
+    background:#a1423f;
 }
 .meetingTitle{
     font-weight:bold;
@@ -12,6 +17,12 @@
 .dateAndTime{
     display:flex;
 }
-.meetingDanger{
+.mostImportant{
     background-color: #d9534f;
+}
+.important{
+    background-color: #db6a66;
+}
+.classic{
+    background-color: #db8481;
 }
