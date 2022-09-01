@@ -29,7 +29,7 @@ Putting up 2 filters for task and meetings, that will later be be done by the ba
 
 **Current Visual** <br>
 
-![](src%5CForReadMe%5C1.JPG)
+<img src="src/ForReadMe/1.JPG"/>
 
 <br>
 **NOTE**:- The filtering of task is currently done in the front end which will be later transferred to
