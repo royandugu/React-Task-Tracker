@@ -27,7 +27,8 @@ the admin can assign the tasks and the meetings to the respective employees. <p>
 Putting up 2 filters for task and meetings, that will later be be done by the backend
 <br>
 
-**Current Visual**
+**Current Visual** <br>
+
 ![](src%5CForReadMe%5C1.JPG)
 
 <br>
