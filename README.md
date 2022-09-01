@@ -18,10 +18,18 @@ the admin can assign the tasks and the meetings to the respective employees. <p>
 <br>
 
 **TO DO FOR NOW**
-1. Render color shades of bg-danger (latest->darkest)
-
+1. Fix the string length of classes 
+2. Fix the pop up box for ascending and descending arrangement of meetings
+3. Set up a universal CSS file
+4. Find a way to assign important using the calculation of latest date and time in the database
+<br>
 **Initial test**
 Putting up 2 filters for task and meetings, that will later be be done by the backend
+<br>
 
+**Current Visual**
+![](src%5CForReadMe%5C1.JPG)
+
+<br>
 **NOTE**:- The filtering of task is currently done in the front end which will be later transferred to
 the backend. 

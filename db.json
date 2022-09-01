@@ -50,7 +50,7 @@
       "time": "12 : 00 A.M.",
       "date": "7/12/2022",
       "mid": 1,
-      "semMenu": "Link"
+      "semMenu": "MostImportant"
     },
     {
       "name": "Meeting with our clients",
@@ -58,7 +58,7 @@
       "date": "9/12/2022",
       "time": "1 : 00 P.M.",
       "mid": 2,
-      "semMenu": "Note"
+      "semMenu": "Important"
     },
     {
       "name": "NOSK meeting",
@@ -66,7 +66,7 @@
       "date": "7/12/2022",
       "time": "1:30 A.M",
       "mid": 3,
-      "semMenu": "Link"
+      "semMenu": "Classic"
     }
   ]
 }
