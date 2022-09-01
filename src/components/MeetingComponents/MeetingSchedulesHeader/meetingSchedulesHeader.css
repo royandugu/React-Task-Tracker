@@ -11,12 +11,17 @@
     font-size:50px;
 }
 .containerTitle{
-    margin-top:70px;
+    margin-top:30px;
     margin-bottom:30px;
 }
 .meetingBodyContainer{
     display:flex;
     flex-flow: column;
     align-items: center;
+    margin-top:43px;
 }
-
+.titleFlex{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
