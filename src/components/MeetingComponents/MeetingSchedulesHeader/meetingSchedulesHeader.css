@@ -19,6 +19,7 @@
     flex-flow: column;
     align-items: center;
     margin-top:43px;
+    position:relative;
 }
 .titleFlex{
     display:flex;

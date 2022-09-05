@@ -19,9 +19,7 @@ the admin can assign the tasks and the meetings to the respective employees. <p>
 
 **TO DO FOR NOW**
 1. Fix the string length of classes 
-2. Fix the pop up box for ascending and descending arrangement of meetings
-3. Set up a universal CSS file
-4. Find a way to assign important meetings using the calculation of assigned date and time in the database
+2. Find a way to assign important meetings using the calculation of assigned date and time in the database
 <br>
 **Initial test**
 Putting up 2 filters for task and meetings, that will later be be done by the backend
