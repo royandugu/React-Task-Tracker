@@ -18,8 +18,9 @@ the admin can assign the tasks and the meetings to the respective employees. <p>
 <br>
 
 **TO DO FOR NOW**
-1. Fix the string length of classes 
-2. Find a way to assign important meetings using the calculation of assigned date and time in the database
+1. The random id for now in taskRenderer
+2. Individual Meeting Description 
+
 <br>
 **Initial test**
 Putting up 2 filters for task and meetings, that will later be be done by the backend

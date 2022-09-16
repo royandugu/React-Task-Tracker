@@ -8,9 +8,6 @@ import TaskNavigator from "../TaskNavigator/taskNavigator";
 import "./taskLister.css";
 
 
-
-
-
 const TaskLister=({fetcher,containerHeight})=>{
     const {data,status}=useQuery("tasks",fetcher);
     const [task,setTask]=useState([]);
