@@ -8,8 +8,10 @@ import "./indvTaskDesc.css";
 
 const IndvTaskDesc=({id,clicked,setClicked})=>{
     const {data,status}=useQuery(`task${id}`,fetchTasks);
+    
     const modelClsName=(clicked)?"modelBox show":"modelBox hide";
     
+    let indvData;
     let title;
     let description;
     let buttonClass="viewBtn dark unClickable";
@@ -25,7 +27,7 @@ const IndvTaskDesc=({id,clicked,setClicked})=>{
         description="Error";
     }
     else{
-        const indvData=data.filter(index=>index.id===id);
+        indvData=data.filter(index=>index.id===id);
         title=indvData[0].name;
         description=indvData[0].desc;
         buttonClass=(indvData[0].semMenu==="Important")?"viewBtn danger":(indvData[0].semMenu==="Link")?"viewBtn primary":(indvData[0].semMenu==="Note")?"viewBtn warning":"viewBtn dark";

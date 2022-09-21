@@ -50,7 +50,7 @@ const Renderer=({stateData,customData,setData,setCustomTask,deleter})=>{
                     </div>
                 </div>
             )):(<h5> There are no tasks left... </h5>)}
-            <IndvTaskDesc id={id} clicked={clicked} setClicked={setClicked}/>
+            <IndvTaskDesc id={id} clicked={clicked} setClicked={setClicked} isTask={true}/>
         </form>
     )
 }
