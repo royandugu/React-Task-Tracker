@@ -45,27 +45,27 @@
   ],
   "Meetings": [
     {
+      "id":1,
       "name": "A meeting with the board members",
-      "description": "A talk about the pros and cons of web 3.0",
+      "desc": "A talk about the pros and cons of web 3.0",
       "time": "12 : 00 A.M.",
       "date": "7/12/2022",
-      "mid": 1,
       "semMenu": "MostImportant"
     },
     {
+      "id":5,
       "name": "Meeting with our clients",
-      "description": "A talk about the pros and cons of web 3.0",
+      "desc": "A talk about the pros and cons of web 3.0",
       "date": "9/12/2022",
       "time": "1 : 00 P.M.",
-      "mid": 2,
       "semMenu": "Important"
     },
     {
+      "id": 2,
       "name": "NOSK meeting",
-      "description": "To talk about the front end of the main website",
+      "desc": "To talk about the front end of the main website",
       "date": "7/12/2022",
       "time": "1:30 A.M",
-      "mid": 3,
       "semMenu": "Classic"
     }
   ]
