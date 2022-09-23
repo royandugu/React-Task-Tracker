@@ -14,7 +14,7 @@ const MeetingRenderer=({stateData})=>{
                 <div onClick={
                     ()=>{
                         clicked?setClick(false):setClick(true);
-                        setId(index.mid);
+                        setId(index.id);
                     }
                 } className={`meetingContainerChild ${(index.semMenu==="MostImportant")?"mostImportant":(index.semMenu==="Important")?"important":"classic"}`} key={index.id}>
                     <div className="dateAndTime">
@@ -22,7 +22,7 @@ const MeetingRenderer=({stateData})=>{
                         <p> {index.time} </p>
                     </div>
                     <h4 className="meetingTitle"> {index.name} </h4>
-                    <p className="meetingDescription"> {index.description} </p> 
+                    <p className="meetingDescription"> {index.desc} </p> 
                 </div>
             )):<h1> No meeting for now </h1>}
             <IndvMeetingDesc id={id} clicked={clicked} setClick={setClick}/>
