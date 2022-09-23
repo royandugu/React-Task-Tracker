@@ -19,7 +19,7 @@ the admin can assign the tasks and the meetings to the respective employees. <p>
 
 **TO DO FOR NOW**
 1. The random id for now in taskRenderer
-2. Individual Meeting Description 
+2. Update the common renderer
 
 <br>
 **Initial test**
