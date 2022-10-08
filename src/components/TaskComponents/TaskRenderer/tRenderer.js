@@ -3,24 +3,15 @@ import IndvTaskDesc from "../IndvTaskDesc/indvTaskDesc";
 
 import "./tRenderer.css";
 //Add a boolean value that verifies if this is a task or not. If task send task else meeting
-const Renderer=({stateData,customData,setData,setCustomTask,deleter})=>{
-    //Just for now
-    
-    const [clicked,setClicked]=useState(false);
-    const [id,setId]=useState(5);
-
+const Renderer=({stateData,customData,setData,setCustomTask,deleter,clicked, setClicked, id, setId, changeIdAndClick})=>{
     let buttonColor;
     let currentData;
     (customData)?currentData=customData:currentData=stateData;
-    //To Prevent 'Too many Re-renders' 
+    
     const setbuttonColor=(btnClr)=>{
         buttonColor=btnClr;
     }
 
-    const changeIdAndClick=(id)=>{
-        setId(id);
-        setClicked(true);
-    }
     return(
         <form className="allTask">
             {(currentData.length>0)?currentData.map(index=>(

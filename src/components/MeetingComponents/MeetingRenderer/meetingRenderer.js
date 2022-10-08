@@ -8,6 +8,11 @@ const MeetingRenderer=({stateData})=>{
     const [clicked, setClick]=useState(false);
     const [id,setId]=useState(2);
 
+    const changeIdAndClick=(id)=>{
+        setId(id);
+        setClick(true);
+    }
+
     return(
         <>
             {(stateData.length>0)?stateData.map(index=>(
@@ -15,6 +20,7 @@ const MeetingRenderer=({stateData})=>{
                     ()=>{
                         clicked?setClick(false):setClick(true);
                         setId(index.id);
+                        (index.id===id & clicked===true) ? setClick(false): changeIdAndClick(index.id)
                     }
                 } className={`meetingContainerChild ${(index.semMenu==="MostImportant")?"mostImportant":(index.semMenu==="Important")?"important":"classic"}`} key={index.id}>
                     <div className="dateAndTime">

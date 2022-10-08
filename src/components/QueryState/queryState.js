@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import TRouter from "../TaskComponents/TaskRoutes/tRoutes";
-import MeetingRenderer from "../MeetingComponents/MeetingRenderer/meetingRenderer";
-
+import CommonRenderer from "../CommonComponents/commonRenderer";
 
 const QueryState=({stateData,queryFetch,setData,status,deleter,isTask})=>{
     
@@ -66,14 +65,10 @@ const QueryState=({stateData,queryFetch,setData,status,deleter,isTask})=>{
             );
         }
         if(isTask){
-            return (
-                    <TRouter stateData={stateData} setData={setData} deleter={deleter}/>
-            )
+            return  <TRouter stateData={stateData} setData={setData} deleter={deleter} isTask={isTask}/>
         }
         else{
-            return(
-                    <MeetingRenderer stateData={stateData} />
-            )
+            return <CommonRenderer stateData={stateData} isTask={isTask}/>
         }
 }
 

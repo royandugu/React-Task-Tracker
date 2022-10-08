@@ -1,6 +1,6 @@
 import {useState} from "react";
 import { useQuery,useMutation} from "react-query";
-import { deleteTask } from "../../QueryFetchers/fetcher";
+import {deleteTask} from "../../QueryFetchers/fetcher"
 
 import QueryState from "../../QueryState/queryState";
 import TaskNavigator from "../TaskNavigator/taskNavigator";
