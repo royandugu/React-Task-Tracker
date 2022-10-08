@@ -20,6 +20,8 @@ the admin can assign the tasks and the meetings to the respective employees. <p>
 **TO DO FOR NOW**
 1. The random id for now in taskRenderer
 2. Update the common renderer
+3. Figure out the use of customData and all others in tRenderer
+4. Proper naming
 
 <br>
 **Initial test**
