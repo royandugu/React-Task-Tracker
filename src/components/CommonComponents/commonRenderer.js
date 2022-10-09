@@ -1,9 +1,9 @@
 import {useState} from "react"
 
-import TRenderer from "../TaskComponents/TaskRenderer/tRenderer"
+import TRoutes from "../TaskComponents/TaskRoutes/tRoutes";
 import MeetingRenderer from "../MeetingComponents/MeetingRenderer/meetingRenderer";
 
-const CommonRenderer=({stateData,customData,setData,setCustomTask,deleter,isTask})=>{
+const CommonRenderer=({stateData,setData,deleter,isTask})=>{
     const [clicked,setClicked]=useState(false);
     const [id,setId]=useState(5);
 
@@ -13,10 +13,10 @@ const CommonRenderer=({stateData,customData,setData,setCustomTask,deleter,isTask
     }
 
     if(isTask){
-        return <TRenderer clicked={clicked} setClicked={setClicked} id={id}  changeIdAndClick={changeIdAndClick}/>
+        return <TRoutes stateData={stateData} setData={setData} deleter={deleter} clicked={clicked} setClicked={setClicked} id={id}  changeIdAndClick={changeIdAndClick}/>
     }
     else{
-        return <MeetingRenderer clicked={clicked} setClicked={setClicked} id={id}  changeIdAndClick={changeIdAndClick}/>
+        return <MeetingRenderer stateData={stateData} clicked={clicked} setClicked={setClicked} id={id} setId={setId}  changeIdAndClick={changeIdAndClick}/>
     }
 }
 export default CommonRenderer;

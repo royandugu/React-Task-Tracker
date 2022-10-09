@@ -1,9 +1,8 @@
-import { useState } from "react";
 import IndvTaskDesc from "../IndvTaskDesc/indvTaskDesc";
 
 import "./tRenderer.css";
 //Add a boolean value that verifies if this is a task or not. If task send task else meeting
-const Renderer=({stateData,customData,setData,setCustomTask,deleter,clicked, setClicked, id, setId, changeIdAndClick})=>{
+const Renderer=({stateData,customData,setData,setCustomTask,deleter,clicked, setClicked, id, changeIdAndClick})=>{
     let buttonColor;
     let currentData;
     (customData)?currentData=customData:currentData=stateData;

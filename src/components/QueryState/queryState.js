@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import TRouter from "../TaskComponents/TaskRoutes/tRoutes";
 import CommonRenderer from "../CommonComponents/commonRenderer";
 
 const QueryState=({stateData,queryFetch,setData,status,deleter,isTask})=>{
@@ -64,12 +63,8 @@ const QueryState=({stateData,queryFetch,setData,status,deleter,isTask})=>{
                 </div>
             );
         }
-        if(isTask){
-            return  <TRouter stateData={stateData} setData={setData} deleter={deleter} isTask={isTask}/>
-        }
-        else{
-            return <CommonRenderer stateData={stateData} isTask={isTask}/>
-        }
+        return <CommonRenderer stateData={stateData} setData={setData} deleter={deleter} isTask={isTask}/>
+        
 }
 
 export default QueryState;

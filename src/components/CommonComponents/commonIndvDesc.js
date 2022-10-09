@@ -1,6 +1,8 @@
 import {AiOutlineCloseCircle} from "react-icons/ai";
 
-const CommonIndvDesc=({id,clicked,setClicked,data,status,isTask})=>{
+const CommonIndvDesc=({id,clicked,setClicked,isTask})=>{
+    if(isTask){ /* Tasks */}
+    else {/** */}
     const modelClsName=(clicked)?"modelBox show":"modelBox hide";
 
     let indvData;
@@ -28,6 +30,7 @@ const CommonIndvDesc=({id,clicked,setClicked,data,status,isTask})=>{
                 <AiOutlineCloseCircle className="closeIcon" onClick={()=>setClicked(false)}/>
             </div>
             <div className="contentContainer">
+                {/** if(isTask) else */}
                 <h3 className="header"> {title} </h3> 
                 <p> {description} </p>
                 {(isTask)&& <button className={buttonClass}> Mark Done </button>} 
