@@ -1,4 +1,4 @@
-import IndvTaskDesc from "../IndvTaskDesc/indvTaskDesc";
+import CommonIndvDesc from "../../CommonComponents/commonIndvDesc";
 
 import "./tRenderer.css";
 //Add a boolean value that verifies if this is a task or not. If task send task else meeting
@@ -40,7 +40,7 @@ const Renderer=({stateData,customData,setData,setCustomTask,deleter,clicked, set
                     </div>
                 </div>
             )):(<h5> There are no tasks left... </h5>)}
-            <IndvTaskDesc id={id} clicked={clicked} setClicked={setClicked} isTask={true}/>
+            <CommonIndvDesc id={id} clicked={clicked} setClicked={setClicked} isTask={true}/>
         </form>
     )
 }

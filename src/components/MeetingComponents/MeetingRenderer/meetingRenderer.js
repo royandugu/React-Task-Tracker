@@ -2,11 +2,10 @@ import CommonIndvDesc from "../../CommonComponents/commonIndvDesc";
 
 import "./meetingRenderer.css";
 
-const MeetingRenderer=({stateData,clicked,setClicked,id,setId,changeIdAndClick})=>{    
-    setId(2);
+const MeetingRenderer=({stateData,clicked,setClicked,id,changeIdAndClick})=>{    
 
     return(
-        <>
+        <form>
             {(stateData.length>0)?stateData.map(index=>(
                 <div onClick={
                     ()=>{
@@ -21,8 +20,8 @@ const MeetingRenderer=({stateData,clicked,setClicked,id,setId,changeIdAndClick})
                     <p className="meetingDescription"> {index.desc} </p> 
                 </div>
             )):<h1> No meeting for now </h1>}
-            <CommonIndvDesc id={id} clicked={clicked} setClicked={setClicked} isTask={true}/>
-        </>
+            <CommonIndvDesc id={id} clicked={clicked} setClicked={setClicked} isTask={false}/>
+        </form>
     )
 }
 export default MeetingRenderer;
