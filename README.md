@@ -18,11 +18,8 @@ the admin can assign the tasks and the meetings to the respective employees. <p>
 <br>
 
 **TO DO FOR NOW**
-1. The random id for now in taskRenderer
-2. Update the common renderer
-3. Figure out the use of customData and all others in tRenderer
-4. Proper naming
-5. CommonIndvDesc is the common box that both task and meeting will have. How values are rendered inside of it makes the difference
+1. Optimize code (first)
+2. Make it responsive
 
 <br>
 **Initial test**
