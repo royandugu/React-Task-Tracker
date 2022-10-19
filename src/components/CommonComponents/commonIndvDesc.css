@@ -1,0 +1,44 @@
+.modelBox{
+    position:absolute;
+    background:white;
+    top:0px;
+    right:10px;
+    z-index:2;
+    width:37%;
+    border:1px solid rgb(221, 221, 221);
+}
+.contentContainer{
+    padding:20px;
+}
+.closeButtonContainer{
+    margin-top:0px;
+    display:flex;
+    justify-content: flex-end;
+    padding-right:10px;
+    border-bottom:1px solid rgb(221, 221, 221);
+    cursor:pointer;
+}
+.closeButtonContainer .closeIcon{
+    color:white;
+    font-size:24px;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+.modelBox h3{
+    text-align:center;
+}
+.modelBox button{
+    margin-top:20px;
+    margin-bottom:10px;
+}
+.unClickable{
+    pointer-events:none;
+}
+.hide{
+    transform: translateY(-250px);
+    transition: 1s ease-in-out;
+}
+.show{
+    transform:translateY(0px);
+    transition: 1s ease-in-out;
+}

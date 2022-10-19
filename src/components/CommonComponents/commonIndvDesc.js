@@ -3,7 +3,8 @@ import {AiOutlineCloseCircle} from "react-icons/ai";
 import IndvTaskDesc from "../TaskComponents/IndvTaskDesc/indvTaskDesc";
 import IndvMeetingDesc from "../MeetingComponents/IndvMeetingDesc/indvMeetingDesc";
 
-import "../TaskComponents/IndvTaskDesc/indvTaskDesc.css"
+import "../TaskComponents/IndvTaskDesc/indvTaskDesc.css";
+import "./commonIndvDesc.css";
 
 const CommonIndvDesc=({id,clicked,setClicked,isTask})=>{
     const modelClsName=(clicked)?"modelBox show":"modelBox hide";

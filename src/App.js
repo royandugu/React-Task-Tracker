@@ -21,13 +21,13 @@ const App=()=>{
         <div className="container-fluid">
             <div className="row">
 
-                <div className="col-lg-2 col-12 menuComp d-none d-lg-block">
+                <div className="col-lg-2 col-md-2 col-12 menuComp d-none d-md-block">
                     <div className="posFixed">
                         <SideMenu/>
                     </div>
                 </div>
 
-                <div className="col-12 d-block d-lg-none" style={{zIndex:2}}>
+                <div className="col-12 d-block d-md-none" style={{zIndex:2}}>
                     <div className="posFixedSml bg-dark">
                         <div className="flexBox">
                             <SmlSideMenu/>
@@ -35,13 +35,13 @@ const App=()=>{
                     </div>
                 </div>
 
-                <div className="col-lg-5 taskListContainer d-none d-lg-block">
+                <div className="col-lg-5 col-md-5 taskListContainer d-none d-md-block">
                     <BrowserRouter>
                         <TaskLister fetcher={fetchTasks} containerHeight={containerHeight}/>
                     </BrowserRouter>
                 </div>
 
-                <div className="col-lg-5 d-none d-lg-block">
+                <div className="col-lg-5 col-md-5 d-none d-md-block">
                     <BrowserRouter>
                         <MeetingSchedulesHeader fetcher={fetchMeetings} containerHeight={containerHeight}/>
                     </BrowserRouter>
@@ -49,12 +49,12 @@ const App=()=>{
             </div>
 
 
-            <div className="d-block d-lg-none">
+            <div className="d-block d-md-none">
                 <BrowserRouter className="flexMenuDisplay">
                 </BrowserRouter>
             </div>
 
-            <div className="bottomBarNavigation bg-dark d-block d-lg-none">
+            <div className="bottomBarNavigation bg-dark d-block d-md-none">
                 <div className="bottomButtonContainer">
                     <BrowserRouter>
                         <BottomBarNavigation/>

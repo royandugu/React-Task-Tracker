@@ -24,7 +24,7 @@ body{
     justify-content: flex-end;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 765px) {
     .taskListContainer{
         margin-top:30px;
         width: 100% !important;

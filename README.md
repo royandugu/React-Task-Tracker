@@ -18,8 +18,9 @@ the admin can assign the tasks and the meetings to the respective employees. <p>
 <br>
 
 **TO DO FOR NOW**
-1. Optimize code (first)
-2. Make it responsive
+1. Optimize (css and all make code trackable)
+1. Make it responsive
+2. Use UseRef hook
 
 <br>
 **Initial test**

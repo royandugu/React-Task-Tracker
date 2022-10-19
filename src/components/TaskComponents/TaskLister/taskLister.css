@@ -12,7 +12,7 @@ h2{
     padding-top:30px;
     padding-right:10px;
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 765px) {
     h2{
         margin-bottom:20px !important;
     }
@@ -32,7 +32,7 @@ h2{
     }
     
 }
-@media only screen and (min-width:991px){
+@media only screen and (min-width:765px){
     .restContainer{
         overflow-y:scroll;
         height:100%;
