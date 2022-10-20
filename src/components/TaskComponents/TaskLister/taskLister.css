@@ -1,17 +1,12 @@
-*{
-    font-family: arial;
-}
-
-/*Title*/
 h2{
     margin:20px 0px 30px 20px;
 }
-
-
 .restContainer{
     padding-top:30px;
     padding-right:10px;
 }
+
+/* Media queries*/
 @media only screen and (max-width: 765px) {
     h2{
         margin-bottom:20px !important;

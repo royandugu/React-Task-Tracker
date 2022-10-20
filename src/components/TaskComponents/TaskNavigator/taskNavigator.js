@@ -22,6 +22,7 @@ const NavigatorTop=()=>{
         barMover(location.pathname);         
     },[location])
 
+    //return
     return(
         <ul className="inBoxMenu">
                 <li className="selected">

@@ -4,7 +4,7 @@ body{
 .container-fluid{
     padding-left: 0px;
 }
-.posFixed{
+.sideMenuContainer{
     background:rgb(233, 233, 233);
     height:100%;
     position:fixed;
@@ -12,18 +12,40 @@ body{
     left:0;
     overflow-y: scroll;
 }
-.posFixedSml{
+.smlSideMenuContainer{
     position:fixed;
     top:0;
     width:100%;
     padding:5px;
     margin-bottom:20px;
 }
-.flexBox{
+.flexBoxOne{
     display:flex;
     justify-content: flex-end;
 }
+.bottomBarNavigation{
+    display:flex;
+    flex-flow:row;
+    position:fixed;
+    bottom:10px;
+    right:0;
+    left:0;
+    border-radius:50px;
+    padding-bottom:5px;
+    z-index:2;
+    width:350px;
+    margin:0 auto;
+}
+.bottomBarNavigation>.bottomButtonContainer{
+    display:flex !important;
+    flex-flow:row;
+    justify-content: space-around;
+    width:100%;
+    height:50px;
+    color:white;
+}
 
+/*Media queries*/
 @media only screen and (max-width: 765px) {
     .taskListContainer{
         margin-top:30px;
