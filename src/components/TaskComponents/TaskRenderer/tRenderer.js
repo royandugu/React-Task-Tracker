@@ -1,16 +1,22 @@
 import CommonIndvDesc from "../../CommonComponents/commonIndvDesc";
 
 import "./tRenderer.css";
-//Add a boolean value that verifies if this is a task or not. If task send task else meeting
-const Renderer=({stateData,customData,setData,setCustomTask,deleter,clicked, setClicked, id, changeIdAndClick})=>{
+
+const Renderer=({stateData,customData,setData,setCustomTask,deleter,clicked, setClicked, id, setId})=>{
+    
     let buttonColor;
     let currentData;
     (customData)?currentData=customData:currentData=stateData;
     
+    const changeIdAndClick=(id)=>{
+        setId(id);
+        setClicked(true);
+    }
     const setbuttonColor=(btnClr)=>{
         buttonColor=btnClr;
     }
 
+    //return
     return(
         <form className="allTask">
             {(currentData.length>0)?currentData.map(index=>(

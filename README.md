@@ -14,13 +14,12 @@ the admin can assign the tasks and the meetings to the respective employees. <p>
 **TO BE ADDED**
 1. Login system
 2. Admin panel
-3. Meeting components
 <br>
 
 **TO DO FOR NOW**
-1. Optimize (css and all make code trackable)
-1. Make it responsive
-2. Use UseRef hook
+1. Optimize (css and all make code trackable) (set indvTaskDesc in such a way that it only exists as one component like a single entity in App.js)(do optimize tRenderer.js)
+2. Make it responsive
+3. Use UseRef hook
 
 <br>
 **Initial test**

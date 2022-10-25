@@ -2,7 +2,12 @@ import CommonIndvDesc from "../../CommonComponents/commonIndvDesc";
 
 import "./meetingRenderer.css";
 
-const MeetingRenderer=({stateData,clicked,setClicked,id,changeIdAndClick})=>{    
+const MeetingRenderer=({stateData,clicked,setClicked,id,setId})=>{    
+
+    const changeIdAndClick=(id)=>{
+        setId(id);
+        setClicked(true);
+    }
 
     return(
         <form>
