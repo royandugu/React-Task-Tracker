@@ -1,9 +1,14 @@
+import { useState } from "react";
+
 import CommonIndvDesc from "../../CommonComponents/commonIndvDesc";
 
 import "./meetingRenderer.css";
 
-const MeetingRenderer=({stateData,clicked,setClicked,id,setId})=>{    
+const MeetingRenderer=({stateData})=>{    
 
+    const [clicked, setClicked]=useState(false);
+    const [id,setId]=useState();
+    
     const changeIdAndClick=(id)=>{
         setId(id);
         setClicked(true);

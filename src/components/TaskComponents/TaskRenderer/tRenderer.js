@@ -1,9 +1,12 @@
+import { useState } from "react";
 import CommonIndvDesc from "../../CommonComponents/commonIndvDesc";
 
 import "./tRenderer.css";
 
-const Renderer=({stateData,customData,setData,setCustomTask,deleter,clicked, setClicked, id, setId})=>{
-    
+const Renderer=({stateData,customData,setData,deleter})=>{
+    const [clicked,setClicked]=useState(false);
+    const [id,setId]=useState();
+
     let buttonColor;
     let currentData;
     (customData)?currentData=customData:currentData=stateData;
@@ -23,7 +26,6 @@ const Renderer=({stateData,customData,setData,setCustomTask,deleter,clicked, set
                 <div className="indvTasks" key={index.id}>
                     <div>
                         <input type="checkbox" style={clicked?{pointerEvents:"none"}:{pointerEvents:"all"}} className="taskChecker" onClick={()=>{
-                            (setCustomTask) && setCustomTask(customData.filter(indx=>indx.id!==index.id));
                             setData(stateData.filter(indx=>indx.id!==index.id));
                             deleter(index.id);
                         }}

@@ -1,9 +1,9 @@
 import Renderer from "../TaskComponents/TaskRenderer/tRenderer";
 
 
-const All=({stateData,setData,deleter,clicked,setClicked,id,setId})=>{
+const All=({stateData,setData,deleter})=>{
     return(
-        <Renderer stateData={stateData} setData={setData} deleter={deleter} clicked={clicked} setClicked={setClicked} id={id} setId={setId}/>
+        <Renderer stateData={stateData} setData={setData} deleter={deleter}/>
     )
 }
 

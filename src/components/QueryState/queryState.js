@@ -1,5 +1,7 @@
 import { useEffect } from "react";
-import CommonRenderer from "../CommonComponents/commonRenderer";
+
+import TaskRoutes from "../TaskComponents/TaskRoutes/tRoutes";
+import MeetingRenderer from "../MeetingComponents/MeetingRenderer/meetingRenderer";
 
 import "./queryState.css";
 
@@ -68,8 +70,8 @@ const QueryState=({stateData,queryFetch,setData,status,deleter,isTask})=>{
                 </div>
             );
         }
-        return <CommonRenderer stateData={stateData} setData={setData} deleter={deleter} isTask={isTask}/>
-        
+        if(isTask) return <TaskRoutes stateData={stateData} setData={setData} deleter={deleter} />
+        else return <MeetingRenderer stateData={stateData} setData={setData} deleter={deleter}/>
 }
 
 export default QueryState;

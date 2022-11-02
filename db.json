@@ -1,12 +1,6 @@
 {
   "tasks": [
     {
-      "id": 5,
-      "name": "Task B",
-      "semMenu": "Important",
-      "desc": "Task B description"
-    },
-    {
       "id": 6,
       "name": "Task C",
       "semMenu": "Important",
@@ -45,7 +39,7 @@
   ],
   "Meetings": [
     {
-      "id":1,
+      "id": 1,
       "name": "A meeting with the board members",
       "desc": "A talk about the pros and cons of web 3.0",
       "time": "12 : 00 A.M.",
@@ -53,7 +47,7 @@
       "semMenu": "MostImportant"
     },
     {
-      "id":3,
+      "id": 3,
       "name": "Meeting with our clients",
       "desc": "A talk about the pros and cons of web 3.0",
       "date": "9/12/2022",
