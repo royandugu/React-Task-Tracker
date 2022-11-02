@@ -9,7 +9,7 @@ import "./tRenderer.css";
 const Renderer=({stateData,customData,setData})=>{
     const [clicked,setClicked]=useState(false);
     const [id,setId]=useState();
-    const {mutate:deleter}=useMutation((id)=>deleteTask(id));
+    const {mutate:deleter}=useMutation((id)=>deleteTask(id)); //Change the main type to trash rather than delete
     
     let buttonColor;
     let currentData;
