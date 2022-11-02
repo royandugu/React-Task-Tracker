@@ -1,9 +1,9 @@
 import Renderer from "../TaskComponents/TaskRenderer/tRenderer";
 
 
-const All=({stateData,setData,deleter})=>{
+const All=({stateData,setData})=>{
     return(
-        <Renderer stateData={stateData} setData={setData} deleter={deleter}/>
+        <Renderer stateData={stateData} setData={setData}/>
     )
 }
 

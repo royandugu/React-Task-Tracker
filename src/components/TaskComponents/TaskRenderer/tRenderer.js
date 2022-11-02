@@ -1,12 +1,16 @@
+import { useMutation } from "react-query";
 import { useState } from "react";
+
+import {deleteTask} from "../../QueryFetchers/fetcher";
 import CommonIndvDesc from "../../CommonComponents/commonIndvDesc";
 
 import "./tRenderer.css";
 
-const Renderer=({stateData,customData,setData,deleter})=>{
+const Renderer=({stateData,customData,setData})=>{
     const [clicked,setClicked]=useState(false);
     const [id,setId]=useState();
-
+    const {mutate:deleter}=useMutation((id)=>deleteTask(id));
+    
     let buttonColor;
     let currentData;
     (customData)?currentData=customData:currentData=stateData;
@@ -18,8 +22,7 @@ const Renderer=({stateData,customData,setData,deleter})=>{
     const setbuttonColor=(btnClr)=>{
         buttonColor=btnClr;
     }
-
-    //return
+   //return
     return(
         <form className="allTask">
             {(currentData.length>0)?currentData.map(index=>(

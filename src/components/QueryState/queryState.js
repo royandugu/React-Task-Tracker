@@ -5,7 +5,7 @@ import MeetingRenderer from "../MeetingComponents/MeetingRenderer/meetingRendere
 
 import "./queryState.css";
 
-const QueryState=({stateData,queryFetch,setData,status,deleter,isTask})=>{
+const QueryState=({stateData,queryFetch,setData,status,isTask})=>{
     useEffect(()=>{
         if(status==="success") setData(queryFetch);
     },[queryFetch,setData,status])
@@ -70,8 +70,8 @@ const QueryState=({stateData,queryFetch,setData,status,deleter,isTask})=>{
                 </div>
             );
         }
-        if(isTask) return <TaskRoutes stateData={stateData} setData={setData} deleter={deleter} />
-        else return <MeetingRenderer stateData={stateData} setData={setData} deleter={deleter}/>
+        if(isTask) return <TaskRoutes stateData={stateData} setData={setData}/>
+        else return <MeetingRenderer stateData={stateData} setData={setData}/>
 }
 
 export default QueryState;
