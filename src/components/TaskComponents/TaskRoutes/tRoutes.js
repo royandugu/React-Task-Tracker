@@ -9,12 +9,14 @@ const RouteMaker = ({stateData,setData}) => {
     
     //return
     return (
+
         <Routes>
             <Route path="/" element={<All stateData={stateData} setData={setData}/>}/> 
             <Route path="/Important" element={<Important stateData={stateData} setData={setData}/>}/> 
             <Route path="/Notes" element={<Notes stateData={stateData} setData={setData}/>}/>
             <Route path="/Links" element={<Links stateData={stateData} setData={setData}/>} />
         </Routes>
+    
     )
 }
 

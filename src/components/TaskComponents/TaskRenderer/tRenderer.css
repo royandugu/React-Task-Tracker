@@ -1,10 +1,7 @@
-.allTask{
+.allTasks{
     margin-left:20px;
 }
-.allTask h5{
-    color:rgb(155, 155, 155);
-}
-.indvTasks{
+.allTasks>.indvTask{
     margin-bottom:15px;
     display:grid;
     grid-template-columns: 1fr 4fr 1fr;
@@ -12,10 +9,10 @@
     cursor:pointer;
     padding:10px;
 }
-.indvTasks:hover{
+.allTasks>.indvTask:hover{
     box-shadow:1px 2px 2px 1px rgb(228, 228, 228);
 }
-.taskChecker{
+.allTasks>.indvTask .taskChecker{
     margin-left:20px;
     margin-top:6px;
     cursor:pointer;
@@ -25,7 +22,7 @@
     width:30px;
     position: relative;
 }
-.taskChecker::after{
+.allTasks>.indvTask .taskChecker::after{
     font-family: "Font Awesome 5 Free";
     font-weight: 500;
     content:"\f00c";
@@ -35,16 +32,16 @@
     left:0;  
     position: absolute;
 }
-.taskChecker:hover{
+.allTasks>.indvTask .taskChecker:hover{
     background:rgb(218, 218, 218);
 }
-.taskChecker:checked::after{
+.allTasks>.indvTask .taskChecker:checked::after{
     display:block;
 }
-.task{
+.allTasks>.indvTask>.task{
     position:relative;
 }
-.viewBtn{
+.allTasks>.indvTask .viewBtn{
     margin-top:0px !important;
     color:white;
     width:100%;
@@ -55,19 +52,19 @@
     padding:6px;
     border-radius:10px;
 }
-.warning{
+.allTasks>.indvTask .warning{
     background-color: #f0ad4e;
 }
-.warning:hover{
+.allTasks>.indvTask .warning:hover{
     background-color: #c28d43;
 }   
-.danger{
+.allTasks>.indvTask .danger{
     background-color: #d9534f;
 }
-.danger:hover{
+.allTasks>.indvTask .danger:hover{
     background-color: #a1423f;
 }
-.primary{
+.allTasks>.indvTask .primary{
     background-color:#0275d8;
 }
 .primary:hover{

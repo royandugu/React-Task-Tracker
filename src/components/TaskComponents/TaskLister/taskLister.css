@@ -1,4 +1,4 @@
-h2{
+.headerTop>h2{
     margin:20px 0px 30px 20px;
 }
 .restContainer{
@@ -8,16 +8,6 @@ h2{
 
 /* Media queries*/
 @media only screen and (max-width: 765px) {
-    h2{
-        margin-bottom:20px !important;
-    }
-    .inBoxMenu{
-        z-index: 1 !important;
-    }
-    .restContainer{
-        height:auto !important;
-        margin-top:130px;
-    }
     .headerTop{
         position:fixed;
         top:30px;
@@ -25,7 +15,13 @@ h2{
         z-index:1;
         background:white;
     }
-    
+    .headerTop>h2{
+        margin-bottom:20px !important;
+    }
+    .restContainer{
+        height:auto !important;
+        margin-top:130px;
+    }
 }
 @media only screen and (min-width:765px){
     .restContainer{

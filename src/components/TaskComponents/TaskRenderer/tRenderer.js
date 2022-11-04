@@ -27,9 +27,9 @@ const Renderer=({stateData,customData,setData})=>{
 
     //return
     return(
-        <form className="allTask">
+        <form className="allTasks">
             {(currentData.length>0)?currentData.map(index=>(
-                <div className="indvTasks" key={index.id}>
+                <div className="indvTask" key={index.id}>
                     <div>
                         <input type="checkbox" style={clicked?{pointerEvents:"none"}:{pointerEvents:"all"}} className="taskChecker" onClick={()=>{
                             setData(stateData.filter(indx=>indx.id!==index.id));
