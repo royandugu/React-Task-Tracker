@@ -1,6 +1,5 @@
 import {useState} from "react";
-import {BrowserRouter } from "react-router-dom";
-import {fetchTasks,fetchMeetings} from "./components/QueryFetchers/fetcher";
+import {BrowserRouter} from "react-router-dom";
 
 import SideMenu from "./components/MenuLg/menuLg";
 import TaskLister from "./components/TaskComponents/TaskLister/taskLister";
@@ -11,11 +10,14 @@ import BottomBarNavigation from "./components/BottomBarNavigation/bottomBarNavig
 import "./App.css";
 
 const App=()=>{    
+    
     const [containerHeight,setContainerHeight]=useState(window.innerHeight);
+    
     window.onresize=()=>setContainerHeight(window.innerHeight);
 
     //Return
     return(
+        
         <div className="container-fluid">
             <div className="row">
                 <div className="col-lg-2 col-md-2 col-12 d-none d-md-block">
@@ -32,12 +34,12 @@ const App=()=>{
                 </div>
                 <div className="col-lg-5 col-md-5 taskListContainer d-none d-md-block">
                     <BrowserRouter>
-                        <TaskLister fetcher={fetchTasks} containerHeight={containerHeight}/>
+                        <TaskLister containerHeight={containerHeight}/>
                     </BrowserRouter>
                 </div>
                 <div className="col-lg-5 col-md-5 d-none d-md-block">
                     <BrowserRouter>
-                        <MeetingSchedulesHeader fetcher={fetchMeetings} containerHeight={containerHeight}/>
+                        <MeetingSchedulesHeader containerHeight={containerHeight}/>
                     </BrowserRouter>
                 </div>
             </div>
@@ -53,6 +55,8 @@ const App=()=>{
                 </div>
             </div>
         </div>
+    
     )
 } 
+
 export default App; 

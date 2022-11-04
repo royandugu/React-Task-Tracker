@@ -11,12 +11,6 @@
 .meetingContainerChild:hover{
     background:#a1423f;
 }
-.meetingTitle{
-    font-weight:bold;
-}
-.dateAndTime{
-    display:flex;
-}
 .mostImportant{
     background-color: #d9534f;
 }
@@ -26,3 +20,11 @@
 .classic{
     background-color: #db8481;
 }
+.meetingContainerChild>.dateAndTime{
+    display:flex;
+}
+.meetingContainerChild>.meetingTitle{
+    font-weight:bold;
+}
+/*Meeting desc ko auxa paxi*/
+

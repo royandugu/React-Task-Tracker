@@ -7,12 +7,6 @@
       "desc": "Task C description"
     },
     {
-      "id": 7,
-      "name": "Task D",
-      "semMenu": "Note",
-      "desc": "Task D description"
-    },
-    {
       "id": 8,
       "name": "Task E",
       "semMenu": "Note",

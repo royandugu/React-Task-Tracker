@@ -14,7 +14,9 @@ const MeetingRenderer=({stateData})=>{
         setClicked(true);
     }
 
+    //return
     return(
+
         <form>
             {(stateData.length>0)?stateData.map(index=>(
                 <div onClick={
@@ -32,6 +34,7 @@ const MeetingRenderer=({stateData})=>{
             )):<h1> No meeting for now </h1>}
             <CommonIndvDesc id={id} clicked={clicked} setClicked={setClicked} isTask={false}/>
         </form>
+        
     )
 }
 export default MeetingRenderer;

@@ -1,6 +1,9 @@
 .allTask{
     margin-left:20px;
 }
+.allTask h5{
+    color:rgb(155, 155, 155);
+}
 .indvTasks{
     margin-bottom:15px;
     display:grid;
@@ -40,19 +43,6 @@
 }
 .task{
     position:relative;
-}
-.adminResponse{
-    background:rgb(190, 221, 255);
-    float:right;
-    border-radius:20px;
-    margin-right:10px;
-    color:rgb(45, 143, 255);
-    font-weight: bold;
-    padding:8px;
-    pointer-events: none;
-}
-.allTask h5{
-    color:rgb(155, 155, 155);
 }
 .viewBtn{
     margin-top:0px !important;

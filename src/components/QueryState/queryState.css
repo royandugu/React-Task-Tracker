@@ -1,14 +1,4 @@
-.loadingContainer,.errorContainer{
-    display:flex;
-    justify-content: center;
-    margin-top:20px;
-}
-.errorContainer{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    color:rgb(201, 201, 201);
-}
+
 .errorContainer>svg{
     margin-right:15px;
 }

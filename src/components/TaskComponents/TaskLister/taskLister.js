@@ -1,14 +1,16 @@
 import {useState} from "react";
 import { useQuery} from "react-query";
 
+import {fetchTasks} from "../../QueryFetchers/fetcher";
+
 import QueryState from "../../QueryState/queryState";
 import TaskNavigator from "../TaskNavigator/taskNavigator";
 
 import "./taskLister.css";
 
-
-const TaskLister=({fetcher,containerHeight})=>{
-    const {data,status}=useQuery("tasks",fetcher);
+const TaskLister=({containerHeight})=>{
+    
+    const {data,status}=useQuery("tasks",fetchTasks);
     const [task,setTask]=useState([]);
     
     //return

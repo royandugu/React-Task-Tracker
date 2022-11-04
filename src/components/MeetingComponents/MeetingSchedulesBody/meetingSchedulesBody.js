@@ -1,11 +1,23 @@
-import QueryState from "../../QueryState/queryState";
-import "./meetingSchedulesBody.css";
+import {useState} from "react";
+import {useQuery} from "react-query";
 
-const MeetingScheduleBody=({stateData,queryFetch,setData,status,containerHeight,deleter})=>{
+import {fetchMeetings} from "../../QueryFetchers/fetcher";
+
+import QueryState from "../../QueryState/queryState";
+
+const MeetingScheduleBody=({containerHeight})=>{
+    
+    const {data,status}=useQuery("Key",fetchMeetings);
+    const [meetingData,setMeetingData]=useState([]);
+    
+    //return
     return(
-        <div className="meetingContainer" style={{height:containerHeight-165}}>
-            <QueryState stateData={stateData} queryFetch={queryFetch} setData={setData} status={status} deleter={deleter} isTask={false}/>
+        
+        <div className="meetingContainer" style={{height:containerHeight-165,borderTop:"1px solid rgb(216, 216, 216)",overflowY:"scroll",padding:10}}>
+            <QueryState stateData={meetingData} queryFetch={data} setData={setMeetingData} status={status} isTask={false}/>
         </div>
-    );
+    
+    )
 }
+
 export default MeetingScheduleBody;

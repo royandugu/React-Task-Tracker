@@ -12,6 +12,7 @@ const Menu=()=>{
                 <p> Hello </p>
             </div>
             <ul className="nav flex-column" id="menuOne">
+
                 <li className="nav-item">
                     <Link to="#" className="nav-link active"> Inbox </Link>
                 </li>
@@ -26,8 +27,10 @@ const Menu=()=>{
                 <li className="nav-item">
                     <Link to="#" className="nav-link"> Trash </Link>
                 </li>
+
             </ul>
             <ul className="nav flex-column" id="menuTwo">
+                
                 <li className="nav-item">
                     <Link to="#" className="nav-link"> Family </Link>
                 </li>
@@ -38,8 +41,10 @@ const Menu=()=>{
                 <li className="nav-item">
                     <Link to="#" className="nav-link"> Holidays </Link>
                 </li>
+
             </ul>
             <ul className="nav flex-column" id="menuThree">
+                
                 <li className="nav-item">
                     <Link to="#" className="nav-link"> Work</Link>
                 </li>
@@ -49,8 +54,11 @@ const Menu=()=>{
                 <li className="nav-item">
                     <Link to="#" className="nav-link"> Presentation </Link>
                 </li>
+
             </ul>
         </BrowserRouter>    
+    
     )
 }
+
 export default Menu;

@@ -7,12 +7,14 @@ import CommonIndvDesc from "../../CommonComponents/commonIndvDesc";
 import "./tRenderer.css";
 
 const Renderer=({stateData,customData,setData})=>{
+    
     const [clicked,setClicked]=useState(false);
     const [id,setId]=useState();
     const {mutate:deleter}=useMutation((id)=>deleteTask(id)); //Change the main type to trash rather than delete
     
     let buttonColor;
     let currentData;
+    
     (customData)?currentData=customData:currentData=stateData;
     
     const changeIdAndClick=(id)=>{
@@ -22,7 +24,8 @@ const Renderer=({stateData,customData,setData})=>{
     const setbuttonColor=(btnClr)=>{
         buttonColor=btnClr;
     }
-   //return
+
+    //return
     return(
         <form className="allTask">
             {(currentData.length>0)?currentData.map(index=>(
