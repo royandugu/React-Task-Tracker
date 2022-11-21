@@ -1,17 +1,14 @@
 import { useMutation } from "react-query";
-import { useState } from "react";
 
 import {deleteTask} from "../../QueryFetchers/fetcher";
-import CommonIndvDesc from "../../CommonComponents/commonIndvDesc";
+import { setClicked, getClicked, getId, setId} from "../../GlobalComponents/indvDisplayParams";  
 
 import "./tRenderer.css";
 
 const Renderer=({stateData,customData,setData})=>{
-    
-    const [clicked,setClicked]=useState(false);
-    const [id,setId]=useState();
+    const id=getId();
     const {mutate:deleter}=useMutation((id)=>deleteTask(id)); //Change the main type to trash rather than delete
-    
+ 
     let buttonColor;
     let currentData;
     
@@ -31,7 +28,7 @@ const Renderer=({stateData,customData,setData})=>{
             {(currentData.length>0)?currentData.map(index=>(
                 <div className="indvTask" key={index.id}>
                     <div>
-                        <input type="checkbox" style={clicked?{pointerEvents:"none"}:{pointerEvents:"all"}} className="taskChecker" onClick={()=>{
+                        <input type="checkbox" style={getClicked()?{pointerEvents:"none"}:{pointerEvents:"all"}} className="taskChecker" onClick={()=>{
                             setData(stateData.filter(indx=>indx.id!==index.id));
                             deleter(index.id);
                         }}
@@ -49,12 +46,11 @@ const Renderer=({stateData,customData,setData})=>{
                         }
                         <button className={buttonColor} onClick={(e)=>{
                             e.preventDefault();
-                            (index.id===id & clicked===true) ? setClicked(false): changeIdAndClick(index.id);
+                            (index.id===id & getClicked()===true) ? setClicked(false): changeIdAndClick(index.id);
                         }}> View  </button>
                     </div>
                 </div>
             )):(<h5> There are no tasks left... </h5>)}
-            <CommonIndvDesc id={id} clicked={clicked} setClicked={setClicked} isTask={true}/>
         </form>
     )
 }

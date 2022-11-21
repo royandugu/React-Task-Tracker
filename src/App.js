@@ -6,13 +6,14 @@ import TaskLister from "./components/TaskComponents/TaskLister/taskLister";
 import MeetingSchedulesHeader from "./components/MeetingComponents/MeetingSchedulesHeader/meetingSchedulesHeader";
 import SmlSideMenu from "./components/MenuSml/smlSideMenu";
 import BottomBarNavigation from "./components/BottomBarNavigation/bottomBarNavigation";
+import CommonIndvDesc from "./components/CommonComponents/commonIndvDesc";
 
 import "./App.css";
 
 const App=()=>{    
     
     const [containerHeight,setContainerHeight]=useState(window.innerHeight);
-    
+
     window.onresize=()=>setContainerHeight(window.innerHeight);
 
     //Return
@@ -44,8 +45,7 @@ const App=()=>{
                 </div>
             </div>
             <div className="d-block d-md-none">
-                <BrowserRouter className="flexMenuDisplay">
-                </BrowserRouter>
+                <BrowserRouter className="flexMenuDisplay"/>
             </div>
             <div className="bottomBarNavigation bg-dark d-block d-md-none">
                 <div className="bottomButtonContainer">
@@ -54,6 +54,7 @@ const App=()=>{
                     </BrowserRouter>
                 </div>
             </div>
+            <CommonIndvDesc/>
         </div>
     
     )

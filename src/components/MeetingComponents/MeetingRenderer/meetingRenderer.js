@@ -1,13 +1,9 @@
-import { useState } from "react";
-
-import CommonIndvDesc from "../../CommonComponents/commonIndvDesc";
+import {getClicked,setClicked,setId,getId} from "../../GlobalComponents/indvDisplayParams"; 
 
 import "./meetingRenderer.css";
 
 const MeetingRenderer=({stateData})=>{    
-
-    const [clicked, setClicked]=useState(false);
-    const [id,setId]=useState();
+    const id=getId();
     
     const changeIdAndClick=(id)=>{
         setId(id);
@@ -21,7 +17,7 @@ const MeetingRenderer=({stateData})=>{
             {(stateData.length>0)?stateData.map(index=>(
                 <div onClick={
                     ()=>{
-                        (index.id===id & clicked===true) ? setClicked(false): changeIdAndClick(index.id)
+                        (index.id===id & getClicked()) ? setClicked(false): changeIdAndClick(index.id)
                     }
                 } className={`meetingContainerChild ${(index.semMenu==="MostImportant")?"mostImportant":(index.semMenu==="Important")?"important":"classic"}`} key={index.id}>
                     <div className="dateAndTime">
@@ -32,7 +28,6 @@ const MeetingRenderer=({stateData})=>{
                     <p className="meetingDescription"> {index.desc} </p> 
                 </div>
             )):<h1> No meeting for now </h1>}
-            <CommonIndvDesc id={id} clicked={clicked} setClicked={setClicked} isTask={false}/>
         </form>
         
     )

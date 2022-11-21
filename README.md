@@ -17,9 +17,10 @@ the admin can assign the tasks and the meetings to the respective employees. <p>
 <br>
 
 **TO DO FOR NOW**
-1. Make indvidual description exist as only one
-2. Make it responsive
-3. Use UseRef hook
+1. Fix indvidual description exist as only one
+2. Is import faster or prop passing faster? 
+3. Make it responsive
+4. Use UseRef hook
 
 <br>
 **Initial test**
