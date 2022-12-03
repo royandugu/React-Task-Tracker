@@ -1,6 +1,5 @@
+import {useState} from "react";
 import {AiOutlineCloseCircle} from "react-icons/ai";
-
-import {getClicked, setClicked, getIsTask, getId} from "../GlobalComponents/indvDisplayParams";
 
 import IndvTaskDesc from "../TaskComponents/IndvTaskDesc/indvTaskDesc";
 import IndvMeetingDesc from "../MeetingComponents/IndvMeetingDesc/indvMeetingDesc";
@@ -8,9 +7,14 @@ import IndvMeetingDesc from "../MeetingComponents/IndvMeetingDesc/indvMeetingDes
 import "./commonIndvDesc.css";
 
 const CommonIndvDesc=()=>{
-    
-    const modelClsName=(getClicked)?"modelBox show":"modelBox hide";
-    
+
+    //Use context hook?
+    const [isTask,setIsTask]=useState(false);
+    const [clicked,setClicked]=useState(false);
+    const [id,setId]=useState();
+   
+    const modelClsName=(clicked)?"modelBox show":"modelBox hide";
+   
     //return
     return (
 
@@ -19,7 +23,7 @@ const CommonIndvDesc=()=>{
                 <AiOutlineCloseCircle className="closeIcon" onClick={()=>setClicked(false)}/>
             </div>
             <div className="contentContainer">
-                {(getIsTask) ? <IndvTaskDesc getId={getId}/> : <IndvMeetingDesc getId={getId}/>}
+                {(isTask) ? <IndvTaskDesc id={id}/> : <IndvMeetingDesc id={id}/>}
             </div>
         </div>
         

@@ -6,7 +6,18 @@ import reportWebVitals from './reportWebVitals';
 import {QueryClientProvider, QueryClient} from "react-query";
 import {ReactQueryDevtools} from "react-query/devtools";
 
-const queryClient=new QueryClient();
+const queryClient=new QueryClient(
+  {
+    defaultOptions: {
+      queries: {
+        refetchOnWindowFocus: false,
+        refetchOnmount: false,
+        refetchOnReconnect: false,
+        retry: false
+      },
+    },
+  }
+);
 ReactDOM.render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}> 
