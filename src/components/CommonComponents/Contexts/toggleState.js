@@ -3,13 +3,16 @@ import ToggleContext from "./toggleContext";
 
 const ToggleState=(props)=>{
     const [clicked,setClick]=useState(false);
+    const [isTask,setIsTask]=useState(false);
     const [id,setId]=useState();
 
     const collection={
         clicked:clicked,
         setClick:setClick,
         id:id,
-        setId:setId
+        setId:setId,
+        isTask:isTask,
+        setIsTask:setIsTask
     }
 
     return(

@@ -1,24 +1,28 @@
+import { useContext } from "react";
 import {AiOutlineCloseCircle} from "react-icons/ai";
 
-import ActualContent from "./actualContent";
-import ToggleState from "./Contexts/toggleState";
+import toggleContext from "./Contexts/toggleContext";
+
+import IndvTaskDesc from "../TaskComponents/IndvTaskDesc/indvTaskDesc";
+import IndvMeetingDesc from "../MeetingComponents/IndvMeetingDesc/indvMeetingDesc";
 
 import "./commonIndvDesc.css";
 
 const CommonIndvDesc=()=>{
+    const context=useContext(toggleContext);
+    const containerClass=(context.clicked)?"modelBox show":"modelBox hide";
+    
+    
     //return
-    return (
-        <ToggleState>
-            <div>
-                <div className="closeButtonContainer bg-dark">
-                    <AiOutlineCloseCircle className="closeIcon" onClick={()=>console.log("Here")}/>
-                </div>
-                <div className="contentContainer">
-                    <ActualContent/>
-                   
-                </div>
+    return(
+        <div className={containerClass}>
+            <div className="closeButtonContainer bg-dark">
+                <AiOutlineCloseCircle className="closeIcon" onClick={()=>console.log("Here")}/>
             </div>
-        </ToggleState>
+            <div className="contentContainer">
+                {(context.isTask)?<IndvTaskDesc id={context.id}/>:<IndvMeetingDesc id={context.id}/>}
+            </div>
+        </div>  
     )
 }
 

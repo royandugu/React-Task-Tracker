@@ -1,12 +1,13 @@
+import { useContext } from "react";
 import { useMutation } from "react-query";
 
 import {deleteTask} from "../../QueryFetchers/fetcher";
-import { setClicked, getClicked, getId, setId} from "../../GlobalComponents/indvDisplayParams";  
+import toggleContext from "../../CommonComponents/Contexts/toggleContext";
 
 import "./tRenderer.css";
 
 const Renderer=({stateData,customData,setData})=>{
-    const id=getId();
+    const context=useContext(toggleContext);
     const {mutate:deleter}=useMutation((id)=>deleteTask(id)); //Change the main type to trash rather than delete
  
     let buttonColor;
@@ -15,8 +16,8 @@ const Renderer=({stateData,customData,setData})=>{
     (customData)?currentData=customData:currentData=stateData;
     
     const changeIdAndClick=(id)=>{
-        setId(id);
-        setClicked(true);
+        context.setId(id);
+        context.setClicked(true);
     }
     const setbuttonColor=(btnClr)=>{
         buttonColor=btnClr;
@@ -28,7 +29,7 @@ const Renderer=({stateData,customData,setData})=>{
             {(currentData.length>0)?currentData.map(index=>(
                 <div className="indvTask" key={index.id}>
                     <div>
-                        <input type="checkbox" style={getClicked()?{pointerEvents:"none"}:{pointerEvents:"all"}} className="taskChecker" onClick={()=>{
+                        <input type="checkbox" style={context.clicked?{pointerEvents:"none"}:{pointerEvents:"all"}} className="taskChecker" onClick={()=>{
                             setData(stateData.filter(indx=>indx.id!==index.id));
                             deleter(index.id);
                         }}
@@ -46,7 +47,7 @@ const Renderer=({stateData,customData,setData})=>{
                         }
                         <button className={buttonColor} onClick={(e)=>{
                             e.preventDefault();
-                            (index.id===id & getClicked()===true) ? setClicked(false): changeIdAndClick(index.id);
+                            (index.id===context.id & context.clicked===true) ? context.setClicked(false) : changeIdAndClick(index.id);
                         }}> View  </button>
                     </div>
                 </div>
