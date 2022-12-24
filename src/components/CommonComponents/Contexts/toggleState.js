@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {ToggleContext} from "./toggleContext";
+import ToggleContext from "./toggleContext";
 
 const ToggleState=(props)=>{
     const [clicked,setClick]=useState(false);
