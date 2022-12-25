@@ -17,7 +17,7 @@ const CommonIndvDesc=()=>{
     return(
         <div className={containerClass}>
             <div className="closeButtonContainer bg-dark">
-                <AiOutlineCloseCircle className="closeIcon" onClick={()=>console.log("Here")}/>
+                <AiOutlineCloseCircle className="closeIcon" onClick={()=>context.setClicked(false)}/>
             </div>
             <div className="contentContainer">
                 {(context.isTask)?<IndvTaskDesc id={context.id}/>:<IndvMeetingDesc id={context.id}/>}

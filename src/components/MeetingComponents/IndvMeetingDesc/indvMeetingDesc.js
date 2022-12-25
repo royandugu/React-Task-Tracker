@@ -10,7 +10,7 @@ const IndvMeetingDesc=({id})=>{
         
         //return
         return(
-            <h5 className="bg-dark"> {data.desc} </h5>
+            <h5 className="text-dark"> {data.desc} </h5>
         )
         
     }

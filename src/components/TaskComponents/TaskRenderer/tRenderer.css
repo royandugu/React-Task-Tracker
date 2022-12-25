@@ -67,7 +67,7 @@
 .allTasks>.indvTask .primary{
     background-color:#0275d8;
 }
-.primary:hover{
+.allTasks>.indvTask .primary:hover{
     background-color: #094d88;
 }
 .dark{

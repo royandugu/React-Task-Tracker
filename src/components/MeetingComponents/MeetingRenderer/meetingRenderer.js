@@ -1,25 +1,23 @@
-import {getClicked,setClicked,setId,getId} from "../../GlobalComponents/indvDisplayParams"; 
+import { useContext } from "react";
+import toggleContext from "../../CommonComponents/Contexts/toggleContext";
 
 import "./meetingRenderer.css";
 
-const MeetingRenderer=({stateData})=>{    
-    const id=getId();
-    
+const MeetingRenderer=({stateData})=>{   
     const changeIdAndClick=(id)=>{
-        setId(id);
-        setClicked(true);
+        context.setId(id);
+        context.setClicked(true);
+        context.setIsTask(false);
     }
+    const context=useContext(toggleContext);
 
     //return
     return(
 
         <form>
             {(stateData.length>0)?stateData.map(index=>(
-                <div onClick={
-                    ()=>{
-                        (index.id===id & getClicked()) ? setClicked(false): changeIdAndClick(index.id)
-                    }
-                } className={`meetingContainerChild ${(index.semMenu==="MostImportant")?"mostImportant":(index.semMenu==="Important")?"important":"classic"}`} key={index.id}>
+                <div onClick={()=>(index.id===context.id & context.clicked===true & context.isTask===false) ? context.setClicked(false) : changeIdAndClick(index.id)}
+                className={`meetingContainerChild ${(index.semMenu==="MostImportant")?"mostImportant":(index.semMenu==="Important")?"important":"classic"}`} key={index.id}>
                     <div className="dateAndTime">
                         <p> {index.date} </p>
                         <p> {index.time} </p>

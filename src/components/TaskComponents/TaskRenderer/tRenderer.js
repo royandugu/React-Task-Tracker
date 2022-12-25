@@ -14,10 +14,10 @@ const Renderer=({stateData,customData,setData})=>{
     let currentData;
     
     (customData)?currentData=customData:currentData=stateData;
-    
     const changeIdAndClick=(id)=>{
-        context.setId(id);
-        context.setClicked(true);
+       context.setIsTask(true); 
+       context.setId(id);
+       context.setClicked(true);
     }
     const setbuttonColor=(btnClr)=>{
         buttonColor=btnClr;
@@ -47,7 +47,7 @@ const Renderer=({stateData,customData,setData})=>{
                         }
                         <button className={buttonColor} onClick={(e)=>{
                             e.preventDefault();
-                            (index.id===context.id & context.clicked===true) ? context.setClicked(false) : changeIdAndClick(index.id);
+                            (index.id===context.id & context.clicked===true & context.isTask===true) ? context.setClicked(false) : changeIdAndClick(index.id);
                         }}> View  </button>
                     </div>
                 </div>

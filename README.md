@@ -17,10 +17,9 @@ the admin can assign the tasks and the meetings to the respective employees. <p>
 <br>
 
 **TO DO FOR NOW**
-1. Fix indvidual description exist as only one
-2. Is import faster or prop passing faster? 
-3. Make it responsive
-4. Use UseRef hook
+1. Thorough check to replace querySelectors with useRef and if possible useState
+1. Make it responsive
+2. Replace query selectors with UseRef hook
 
 **Issues**
 1. The link button is not even being clicked

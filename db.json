@@ -2,15 +2,15 @@
   "tasks": [
     {
       "id": 6,
-      "name": "Task C",
+      "name": "Task A",
       "semMenu": "Link",
-      "desc": "Task C description"
+      "desc": "Task A description"
     },
     {
       "id": 8,
-      "name": "Task E",
+      "name": "Task B",
       "semMenu": "Link",
-      "desc": "Task E description"
+      "desc": "Task B description"
     },
     {
       "id": 123,
@@ -20,27 +20,27 @@
     },
     {
       "id": 55,
-      "name": "Task E",
+      "name": "Task D",
       "semMenu": "Note",
-      "desc": "Task E description"
+      "desc": "Task D description"
     },
     {
       "id": 10,
-      "name": "Task G",
+      "name": "Task E",
       "semMenu": "Link",
-      "desc": "Task G description"
+      "desc": "Task E description"
     },
     {
       "id": 99,
-      "name": "Task C",
+      "name": "Task F",
       "semMenu": "Important",
-      "desc": "Task C description"
+      "desc": "Task F description"
     },
     {
       "id": 23,
-      "name": "Task E",
+      "name": "Task G",
       "semMenu": "Note",
-      "desc": "Task E description"
+      "desc": "Task G description"
     },
     {
       "id": 11,
@@ -67,7 +67,7 @@
     {
       "id": 3,
       "name": "Meeting with our clients",
-      "desc": "A talk about the pros and cons of web 3.0",
+      "desc": "Draw the website wireframe",
       "date": "9/12/2022",
       "time": "1 : 00 P.M.",
       "semMenu": "Important"
