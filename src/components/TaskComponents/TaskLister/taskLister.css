@@ -7,7 +7,7 @@
 }
 
 /* Media queries*/
-@media only screen and (max-width: 765px) {
+@media only screen and (max-width: 767px) {
     .headerTop{
         position:fixed;
         top:30px;
@@ -23,7 +23,7 @@
         margin-top:130px;
     }
 }
-@media only screen and (min-width:765px){
+@media only screen and (min-width:767px){
     .restContainer{
         overflow-y:scroll;
         height:100%;

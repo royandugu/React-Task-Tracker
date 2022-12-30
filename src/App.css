@@ -45,8 +45,18 @@ body{
     color:white;
 }
 
+/*Small screen*/
+.smlSlide{
+    display:none;
+    margin-top:40px;
+    width:200vw;
+}
+.smlSlide>div{
+    flex-basis: 100%;
+    padding-right:10px;
+}
 /*Media queries*/
-@media only screen and (max-width: 765px) {
+@media only screen and (max-width: 767px) {
     .taskListContainer{
         margin-top:30px;
         width: 100% !important;
@@ -58,6 +68,9 @@ body{
         overflow-y:scroll !important;        
     }
     body{
-        overflow-y:scroll !important;        
+        overflow-x:scroll !important;        
+    }
+    .smlSlide{
+        display:flex;
     }
 }

@@ -18,8 +18,11 @@ the admin can assign the tasks and the meetings to the respective employees. <p>
 
 **TO DO FOR NOW**
 1. Thorough check to replace querySelectors with useRef and if possible useState
-1. Make it responsive
-2. Replace query selectors with UseRef hook
+2. Make it responsive
+3. Replace query selectors with UseRef hook
+4. After the meeting has been clicked (in small menu) the taskLister doesn't have the position fixed property
+5. Indv task desc laii position absolute hoina position fixed chain garam taki after going to meeting
+section in mobile view it will stay the same
 
 **Issues**
 1. The link button is not even being clicked

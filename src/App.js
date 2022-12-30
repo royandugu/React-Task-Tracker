@@ -20,7 +20,7 @@ const App=()=>{
     //Return
     return(
         <ToggleState>
-            <div className="container-fluid">
+            <div className="container-fluid" style={{padding:0}}>
                 <div className="row">
                     <div className="col-lg-2 col-md-2 col-12 d-none d-md-block">
                         <div className="sideMenuContainer">
@@ -40,6 +40,18 @@ const App=()=>{
                         </BrowserRouter>
                     </div>
                     <div className="col-lg-5 col-md-5 d-none d-md-block">
+                        <BrowserRouter>
+                            <MeetingSchedulesHeader containerHeight={containerHeight}/>
+                        </BrowserRouter>
+                    </div>
+                </div>
+                <div className="smlSlide">
+                    <div className="smlTaskLister">
+                        <BrowserRouter>
+                            <TaskLister containerHeight={containerHeight}/>
+                        </BrowserRouter>
+                    </div> 
+                    <div className="smlMeetingLister">
                         <BrowserRouter>
                             <MeetingSchedulesHeader containerHeight={containerHeight}/>
                         </BrowserRouter>
