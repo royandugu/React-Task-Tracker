@@ -23,6 +23,7 @@ the admin can assign the tasks and the meetings to the respective employees. <p>
 4. After the meeting has been clicked (in small menu) the taskLister doesn't have the position fixed property
 5. Indv task desc laii position absolute hoina position fixed chain garam taki after going to meeting
 section in mobile view it will stay the same
+6. Based on if the meeting button is clicked remove the class named fixedPos, also put fixedPos based on windowSize
 
 **Issues**
 1. The link button is not even being clicked

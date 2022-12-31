@@ -5,9 +5,9 @@ import "./bottomBarNavigation.css";
 const BottomBarNavigation=()=>{
     const meetingBarRef=useRef(null);
     const taskBarRef=useRef(null);
-
     //When development starts in mobile mode, check if the lack of useEffect creates an issue
     const showMeeting=()=>{
+        console.log(meetingBarRef);
         meetingBarRef.current.classList.add("selected");
         taskBarRef.current.classList.remove("selected");
     }
@@ -17,11 +17,11 @@ const BottomBarNavigation=()=>{
     }
     return(
         <>
-            <div ref={meetingBarRef} className="taskBar selected" onClick={showTask}>
+            <div ref={meetingBarRef} className="taskBar selected" onClick={()=>showTask}>
                 <GiNotebook className="taskIcon"/>
                 <p> Today Task  </p>
             </div>
-            <div ref={taskBarRef} className="meetingBar" onClick={showMeeting}>
+            <div ref={taskBarRef} className="meetingBar" onClick={()=>showMeeting}>
                 <IoIosPeople className="meetingIcon"/>
                 <p> Meetings </p> 
             </div>

@@ -6,10 +6,14 @@
     padding-right:10px;
 }
 
+/*Fixed pos*/
+.fixedPos{
+    position: fixed;
+}
+
 /* Media queries*/
 @media only screen and (max-width: 767px) {
-    .headerTop{
-        position:fixed;
+    .headerTop{     
         top:30px;
         width:100%;
         z-index:1;
