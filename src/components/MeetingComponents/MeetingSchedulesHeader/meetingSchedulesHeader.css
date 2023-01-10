@@ -15,6 +15,7 @@
     flex-flow: column;
     align-items: center;
     margin-top:43px;
+    margin-right:10px;
     position:relative;
 }
 .meetingBodyContainer>.titleFlex{

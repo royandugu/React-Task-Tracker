@@ -1,5 +1,6 @@
 body{
     overflow-y: hidden;
+    overflow-x: hidden;
 }
 .container-fluid{
     padding-left: 0px;

@@ -5,7 +5,6 @@ const ToggleState=(props)=>{
     const [clicked,setClicked]=useState(false);
     const [isTask,setIsTask]=useState(false);
     const [id,setId]=useState();
-    const headerTopRef=useRef("null");
 
     const collection={
         clicked:clicked,
@@ -13,8 +12,7 @@ const ToggleState=(props)=>{
         id:id,
         setId:setId,
         isTask:isTask,
-        setIsTask:setIsTask,
-        headerTopRef:headerTopRef
+        setIsTask:setIsTask
     }
 
     return(

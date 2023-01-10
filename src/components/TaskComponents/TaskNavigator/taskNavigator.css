@@ -34,4 +34,7 @@
     .inBoxMenu{
         z-index: 1 !important;
     }
+    .inBoxMenu{
+        margin-left: 0px !important;
+    }
 }
