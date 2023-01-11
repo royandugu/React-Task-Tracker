@@ -5,6 +5,9 @@ body{
 .container-fluid{
     padding-left: 0px;
 }
+::-webkit-scrollbar{
+    display:none;
+}
 .sideMenuContainer{
     background:rgb(233, 233, 233);
     height:100%;
