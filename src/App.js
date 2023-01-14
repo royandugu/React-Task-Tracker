@@ -45,8 +45,8 @@ const App=()=>{
                         </BrowserRouter>
                     </div>
                 </div>
-                <div className="smlSlide">
-                    <div className="smlTaskLister">
+                <div className="smlSlide d-block d-md-none">
+                    <div className="smlTaskLister" style={{}}>
                         <BrowserRouter>
                             <TaskLister containerHeight={containerHeight}/>
                         </BrowserRouter>

@@ -16,6 +16,9 @@ the admin can assign the tasks and the meetings to the respective employees. <p>
 2. Admin panel
 <br>
 
+
+**MAJOR TO DO**
+1. Context mah click add gara ra click anusar app.css mah meeting ya task display gara
 **TO DO FOR NOW**
 1. Thorough check to replace querySelectors with useRef and if possible useState
 2. Make it responsive

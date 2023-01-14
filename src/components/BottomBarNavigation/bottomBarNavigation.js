@@ -9,12 +9,10 @@ const BottomBarNavigation=()=>{
     const taskBarRef=useRef(null);
     //When development starts in mobile mode, check if the lack of useEffect creates an issue
     const showMeeting=()=>{
-        window.scrollBy(window.innerWidth+50,0);
         meetingBarRef.current.classList.add("selected");
         taskBarRef.current.classList.remove("selected");
     }
     const showTask=()=>{
-        window.scrollBy(-window.innerWidth-50,0);
         meetingBarRef.current.classList.remove("selected");
         taskBarRef.current.classList.add("selected");
     }
