@@ -8,7 +8,7 @@ import IndvMeetingDesc from "../MeetingComponents/IndvMeetingDesc/indvMeetingDes
 
 import "./commonIndvDesc.css";
 
-const CommonIndvDesc=()=>{
+const CommonIndvDesc=()=>{ 
     const context=useContext(toggleContext);
     const containerClass=(context.clicked)?"modelBox show":"modelBox hide";
     

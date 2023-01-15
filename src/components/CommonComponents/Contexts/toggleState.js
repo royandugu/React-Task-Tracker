@@ -1,9 +1,9 @@
-import { useState,useRef } from "react";
+import { useState } from "react";
 import ToggleContext from "./toggleContext";
 
 const ToggleState=(props)=>{
     const [clicked,setClicked]=useState(false);
-    const [smlTaskDisplay,setSmlTaskDisplay]=useState(false);
+    const [smlTaskDisplay,setSmlTaskDisplay]=useState(true);
     const [isTask,setIsTask]=useState(false);
     const [id,setId]=useState();
 

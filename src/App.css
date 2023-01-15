@@ -49,21 +49,10 @@ body{
 /*Small screen*/
 .smlSlide{
     margin-top:40px;
-    width:200vw;
 }
 /*Media queries*/
 @media only screen and (max-width: 767px) {
     .taskListContainer{
         margin-top:30px;
-        width: 100% !important;
-    }
-    .meetingSchedulesContainer{
-        width:100% !important;
-    }
-    body{
-        overflow-y:scroll !important;        
-    }
-    body{
-        overflow-x:scroll !important;        
     }
 }
