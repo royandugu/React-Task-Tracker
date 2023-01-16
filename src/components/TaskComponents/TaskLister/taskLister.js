@@ -21,7 +21,7 @@ const TaskLister=({containerHeight})=>{
                     <TaskNavigator/>
                 </div>
             </div>
-            <div className="restContainer" style={{height:containerHeight-165}}>
+            <div className="restContainer" style={{height:containerHeight-153}}>
                 <QueryState stateData={task} queryFetch={data} setData={setTask} status={status} isTask={true}/>
             </div>
         </div>

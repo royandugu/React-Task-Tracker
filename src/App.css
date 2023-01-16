@@ -1,7 +1,25 @@
 body{
-    overflow-y: hidden;
     overflow-x: hidden;
+    overflow-y:auto;
 }
+/*scroll bar*/
+::-webkit-scrollbar{
+    width:.8em;
+}
+::-webkit-scrollbar-track{
+    background:white;
+}
+::-webkit-scrollbar-thumb{
+    background:rgb(219, 219, 219);
+}
+::-webkit-scrollbar-button{
+    display:none;
+}
+::-webkit-scrollbar-thumb:hover{
+    background:rgb(212, 212, 212);
+}
+
+
 .container-fluid{
     padding-left: 0px;
 }
@@ -11,7 +29,7 @@ body{
     position:fixed;
     width:15%;
     left:0;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 .smlSideMenuContainer{
     position:fixed;
@@ -52,7 +70,15 @@ body{
 }
 /*Media queries*/
 @media only screen and (max-width: 767px) {
+    *{
+        font-size:16px !important
+    }
     .taskListContainer{
         margin-top:30px;
+    }
+}
+@media only screen and (max-width: 900px){
+    *{
+        font-size:13px;
     }
 }

@@ -13,7 +13,7 @@ const MeetingScheduleBody=({containerHeight})=>{
     //return
     return(
         
-        <div className="meetingContainer" style={{height:containerHeight-165,borderTop:"1px solid rgb(216, 216, 216)",overflowY:"auto",padding:10}}>
+        <div className="meetingContainer" style={{height:containerHeight-149,borderTop:"1px solid rgb(216, 216, 216)",overflowY:"auto",padding:10}}>
             <QueryState stateData={meetingData} queryFetch={data} setData={setMeetingData} status={status} isTask={false}/>
         </div>
     

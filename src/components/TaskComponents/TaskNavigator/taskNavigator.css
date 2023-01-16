@@ -37,4 +37,8 @@
     .inBoxMenu{
         margin-left: 0px !important;
     }
+    ul>*{
+        font-size:16px !important;
+    }
 }
+

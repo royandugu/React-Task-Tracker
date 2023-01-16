@@ -73,3 +73,15 @@
 .dark{
     background-color: #292b2c;
 }
+
+/*Media queries*/
+@media only screen and (max-width: 1100px){
+    .allTasks>.indvTask>.task{
+        margin-left:20px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .allTasks>.indvTask>.task{
+        margin-left:0px !important;
+    }
+}

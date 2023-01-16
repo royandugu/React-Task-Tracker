@@ -24,21 +24,3 @@
     color:#d9534f;
     pointer-events: none;
 }
-
-@media only screen and (min-width: 991px){
-    ::-webkit-scrollbar{
-        width:.8em;
-    }
-    ::-webkit-scrollbar-track{
-        background:white;
-    }
-    ::-webkit-scrollbar-thumb{
-        background:rgb(219, 219, 219);
-    }
-    ::-webkit-scrollbar-button{
-        display:none;
-    }
-    ::-webkit-scrollbar-thumb:hover{
-        background:rgb(212, 212, 212);
-    }
-}
