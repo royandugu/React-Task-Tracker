@@ -8,6 +8,7 @@ import SmlSideMenu from "./components/MenuSml/smlSideMenu";
 import BottomBarNavigation from "./components/BottomBarNavigation/bottomBarNavigation";
 import CommonIndvDesc from "./components/CommonComponents/commonIndvDesc";
 import toggleContext from "./components/CommonComponents/Contexts/toggleContext";
+import UserInformation from "./components/UserInformation/userInformation";
 
 import "./App.css";
 
@@ -34,12 +35,13 @@ const App=()=>{
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-5 col-md-5 taskListContainer d-none d-md-block">
+                <div className="col-lg-5 col-md-5 d-none d-md-block">
                     <BrowserRouter>
                         <TaskLister containerHeight={containerHeight}/>
                     </BrowserRouter>
                 </div>
                 <div className="col-lg-5 col-md-5 d-none d-md-block">
+                    <UserInformation/>
                     <BrowserRouter>
                         <MeetingSchedulesHeader containerHeight={containerHeight}/>
                     </BrowserRouter>

@@ -21,14 +21,8 @@
     }
     .restContainer{
         width:100vw;
-        height:auto !important;
     }
     .headerTop h2{
         font-size:25px !important;
-    }
-}
-@media only screen and (min-width:767px){
-    .restContainer{
-        height:100%;
     }
 }

@@ -70,15 +70,15 @@ body{
 }
 /*Media queries*/
 @media only screen and (max-width: 767px) {
-    *{
+    /* *{
         font-size:16px !important
-    }
+    } */
     .taskListContainer{
         margin-top:30px;
     }
 }
 @media only screen and (max-width: 900px){
-    *{
+    /* *{
         font-size:13px;
-    }
+    } */
 }

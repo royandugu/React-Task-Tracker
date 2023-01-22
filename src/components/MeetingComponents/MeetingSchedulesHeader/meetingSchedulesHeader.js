@@ -1,5 +1,4 @@
 import { useState } from "react";
-import {FaUser,FaCheckSquare} from "react-icons/fa";
 import {AiOutlineMenuUnfold} from "react-icons/ai"; 
 
 import MeetingScheduleBody from "../MeetingSchedulesBody/meetingSchedulesBody";
@@ -14,9 +13,6 @@ const MeetingScheduleHeader=({containerHeight})=>{
     //return
     return(
         <> 
-            <div className="iContainer">
-                <FaCheckSquare className="text-primary"/><FaUser/> 
-            </div>
             <div className="meetingBodyContainer">
                 <div className="titleFlex">
                     <h5 className="containerTitle"> Meeting Schedules </h5>

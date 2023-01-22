@@ -19,9 +19,11 @@ the admin can assign the tasks and the meetings to the respective employees. <p>
 
 **TO DO FOR NOW**
 1. Thorough check to replace querySelectors with useRef and if possible useState
-2. Make meeting schedules and task lister in the same line (I think the icon shrinking is the issue<< stop icon shrinking>>)
+2. Make meeting schedules and task lister in the same line (I think the icon shrinking is the issue<< stop icon shrinking>>). For this firstly fix the whole basic layout like the user icon and all that is being displayed should not be in meeting schedules header. It should be a different component fixed at the top.
 3. Beautify mobile view for meeting schedules (2 scrollbars?)
 
+## Issue
+Why is task lister changing it's height when shrinking
 
 <br>
 **Initial test**
