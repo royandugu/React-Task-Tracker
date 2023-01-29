@@ -8,6 +8,9 @@
     padding:0;
     position: relative;
 }
+.inBoxMenu{
+    transition: .5s ease-in-out;
+}
 .inBoxMenu>li{
     list-style: none;
     padding:20px 10px 30px 10px;
@@ -30,6 +33,19 @@
     transform:translateX(25%) !important;
 }
 
+
+/*Media queries*/
+@media only screen and (max-width: 900px){
+    ul>*{
+        transition: .5s ease-in-out;
+        font-size:14px;
+    }
+}
+@media only screen and (min-width: 900px){
+    ul>*{
+        transition: .5s ease-in-out;
+    }
+}
 @media only screen and (max-width: 767px){
     .inBoxMenu{
         z-index: 1 !important;
@@ -37,8 +53,9 @@
     .inBoxMenu{
         margin-left: 0px !important;
     }
-    ul>*{
+    .inBoxMenu>*{
         font-size:16px !important;
+        transition: .5s ease-in-out;
     }
 }
 

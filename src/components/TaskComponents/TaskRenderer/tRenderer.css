@@ -16,7 +16,6 @@
     margin-left:20px;
     margin-top:6px;
     cursor:pointer;
-    -webkit-appearance: none;
     height:30px;
     background:rgb(228, 228, 228);
     width:30px;
@@ -80,7 +79,7 @@
         margin-left:20px;
     }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px){
     .allTasks>.indvTask>.task{
         margin-left:0px !important;
     }

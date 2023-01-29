@@ -15,7 +15,30 @@
     align-items: center;
 }
 .meetingBodyContainer>.titleFlex>.containerTitle{
-    margin-top:30px;
+    margin-top:27.5px;
     margin-bottom:30px;
+    transition: .5s ease-in-out !important;
 }
 
+/*Media queries*/
+@media only screen and (max-width: 900px){
+    .meetingBodyContainer>.titleFlex>.containerTitle{
+        margin-top:29.5px;
+        margin-bottom:30px;
+    }
+    .meetingBodyContainer>.titleFlex>.containerTitle{
+        font-size:17px;
+    }
+}
+@media only screen and (min-width: 900px){
+    .meetingBodyContainer>.titleFlex>.containerTitle{
+        margin-top:30.5px;
+        margin-bottom:30px;
+    }
+
+}
+@media only screen and (max-width: 767px){
+    .meetingBodyContainer>.titleFlex>.containerTitle{
+        font-size:25px !important;
+    }
+}

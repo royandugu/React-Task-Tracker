@@ -1,0 +1,18 @@
+.iContainer{
+    padding-top:10;
+    font-size:25px;
+    display:flex;
+    flex-flow:row-reverse;
+    margin-right:20px;
+    align-items: center;
+    margin-top:10px;
+    margin-bottom:30px;
+}
+.iContainer>*{
+    transition:.5s ease-in-out !important;
+}
+@media only screen and (max-width: 900px) {
+    .iContainer>*{
+        font-size:20px;
+    }
+}
