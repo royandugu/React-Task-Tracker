@@ -14,7 +14,7 @@ const TaskLister=({containerHeight})=>{
     
     //return
     return(
-        <div style={{position:"fixed",left:0,right:0}}>
+        <div>
             <div className="headerTop">
                 <div>
                     <h2> Today Task </h2>

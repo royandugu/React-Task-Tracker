@@ -23,6 +23,8 @@ the admin can assign the tasks and the meetings to the respective employees. <p>
 3. Beautify mobile view for meeting schedules (2 scrollbars?)
 4. Small button and texts in task lister
 5. Fix menu container's height
+6. In the smaller menu between the navigation of task and meetings put a small red circle with a cross and once the cross is clicked, with a certain transition, the navigation bar collapses and then icon changes
+7. Make a custom click bar
 
 
 <br>

@@ -1,6 +1,6 @@
 body{
     overflow-x: hidden;
-    overflow-y:auto;
+    overflow-y:hidden;
 }
 /*scroll bar*/
 ::-webkit-scrollbar{
